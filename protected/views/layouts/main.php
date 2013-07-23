@@ -12,7 +12,6 @@
 
 <body>
 
-
     <?php echo $content; ?>
 
     <!-- SCRIPTS -->

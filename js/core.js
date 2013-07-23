@@ -8,8 +8,8 @@
 
 var map;
 var infowindow
-var inativo = 'http://localhost/ndd/images/i7.png';
-var ativo = 'http://localhost/ndd/images/i8.png';
+var inativo = 'images/i7.png';
+var ativo = 'images/i8.png';
 
 function initialize() {
 
