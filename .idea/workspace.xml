@@ -28,28 +28,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2334" selection-end="2334" vertical-scroll-proportion="-23.75">
+            <state line="56" column="56" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-14.642858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/core.js">
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="30" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24531025">
-              <folding>
-                <marker date="1374548541563" expanded="false" signature="2704:2718" placeholder="..." />
-                <marker date="1374548541563" expanded="false" signature="2861:2875" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="22" column="3" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#165#0" expanded="false" />
               </folding>
@@ -57,10 +45,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CadastroController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/CadastroController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="31" selection-start="112" selection-end="112" vertical-scroll-proportion="-2.7692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="40" selection-start="885" selection-end="885" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/cadastro/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="59" selection-start="562" selection-end="562" vertical-scroll-proportion="-11.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserIdentity.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="12" selection-start="580" selection-end="580" vertical-scroll-proportion="0.43328336">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="-8.5">
+            <state line="17" column="56" selection-start="563" selection-end="563" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
@@ -77,18 +101,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/column1.php" />
         <option value="$PROJECT_DIR$/protected/models/Novidade.php" />
         <option value="$PROJECT_DIR$/js/marker.js" />
         <option value="$PROJECT_DIR$/js/mark.js" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/js/sidetogglemenu.js" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/css/sidetogglemenu.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/js/core.js" />
+        <option value="$PROJECT_DIR$/js/admin.js" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/cadastro/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
       </list>
     </option>
   </component>
@@ -152,6 +179,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="QEE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -217,6 +248,32 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NDD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadastro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -233,6 +290,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NDD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="QEE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NDD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,6 +389,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\NDD\protected\views\cadastro" />
       <recent name="C:\xampp\htdocs\NDD" />
       <recent name="D:\xampp\htdocs\NDD\js" />
       <recent name="D:\xampp\htdocs\NDD" />
@@ -463,31 +557,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="25" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="782" selection-end="782" vertical-scroll-proportion="0.60315377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/column1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="132" selection-end="132" vertical-scroll-proportion="-1.9615384" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Estabelecimento.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="319" selection-end="319" vertical-scroll-proportion="-3.2692308" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="894" selection-end="894" vertical-scroll-proportion="0.02556391" />
       </provider>
     </entry>
@@ -517,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="456" selection-end="456" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
@@ -533,20 +595,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2334" selection-end="2334" vertical-scroll-proportion="-23.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24531025">
+        <state line="6" column="3" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14718615">
           <folding>
             <marker date="1374548541563" expanded="false" signature="2704:2718" placeholder="..." />
             <marker date="1374548541563" expanded="false" signature="2861:2875" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../framework/zii/widgets/CMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="244" column="28" selection-start="9850" selection-end="9850" vertical-scroll-proportion="0.40929535">
+          <folding>
+            <element signature="e#6#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../framework/yiilite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4673" column="33" selection-start="134460" selection-end="134460" vertical-scroll-proportion="0.4235474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="56" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-14.642858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CadastroController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="31" selection-start="112" selection-end="112" vertical-scroll-proportion="-2.7692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="40" selection-start="885" selection-end="885" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="56" selection-start="563" selection-end="563" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/cadastro/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="59" selection-start="562" selection-end="562" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/UserIdentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="12" selection-start="580" selection-end="580" vertical-scroll-proportion="0.43328336">
+          <folding />
         </state>
       </provider>
     </entry>

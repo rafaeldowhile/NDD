@@ -2722,3 +2722,20 @@ Stack trace:
 REQUEST_URI=/ndd/index.php?r=site/ajaxProcessor
 HTTP_REFERER=http://localhost/ndd/
 ---
+2013/07/23 05:45:58 [error] [php] Undefined variable: model (C:\xampp\htdocs\NDD\protected\views\cadastro\index.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): CadastroController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(782): CadastroController->renderPartial()
+#2 C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php(7): CadastroController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CadastroController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\views\cadastro\index.php (13)
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (7)
+in C:\xampp\htdocs\NDD\index.php (13)

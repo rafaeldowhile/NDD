@@ -48,31 +48,33 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span2">
-            <h2>Novidade do dia!</h2>
-            <p><small>Aqui você encontra as melhores ofertas do <strong>dia</strong> oferecida pelos melhores lugares.</small></p>
+        <div class="span8">
+            <p>Novidade do dia! Aqui você encontra as melhores ofertas do <strong>dia</strong> oferecida pelos melhores lugares.</p>
         </div>
-        <div class="span9">
-            <form class="form-inline">
-                <fieldset>
-                    <legend>Filtre sobre o que você procura por hoje!</legend>
-                    <label>O que você quer?</label>
-                    <select>
-                        <option>Selecione</option>
-                        <optgroup label="Lugares">
-                            <option>Bares</option>
-                            <option>Restaurantes</option>
-                            <option>Festas</option>
-                        </optgroup>
-                    </select>
-                    <button type="submit" class="btn btn-large">Procurar</button>
-                </fieldset>
-            </form>
-
+        <div class="span4">
+            <p>
+                <strong>
+                    Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', 'cadastro/index')?>.
+                </strong>
+            </p>
         </div>
-        <div class="span1">
-            <button onClick="mymenu.toggle();" class="btn btn-block sideviewtoggle">Menu</button>
-        </div>
+    </div>
+    <div class="row-fluid">
+        <form class="form-inline">
+            <fieldset>
+                <legend>Filtre sobre o que você procura por hoje!</legend>
+                <label>O que você quer?</label>
+                <select>
+                    <option>Selecione</option>
+                    <optgroup label="Lugares">
+                        <option>Bares</option>
+                        <option>Restaurantes</option>
+                        <option>Festas</option>
+                    </optgroup>
+                </select>
+                <button type="submit" class="btn btn-large">Procurar</button>
+            </fieldset>
+        </form>
     </div>
 </div>
 
