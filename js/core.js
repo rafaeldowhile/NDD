@@ -7,7 +7,7 @@
  */
 
 var map;
-var infowindow
+var infowindow;
 var inativo = 'images/i7.png';
 var ativo = 'images/i8.png';
 
@@ -27,7 +27,7 @@ function initialize() {
             style: google.maps.ZoomControlStyle.SMALL
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
+    };
 
     map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 

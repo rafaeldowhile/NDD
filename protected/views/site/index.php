@@ -41,11 +41,6 @@
     }
 </style>
 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.0&key=AIzaSyALPiNlx5KpzDb93X5ecFrbFIjpw0KZXn8&sensor=true&libraries=places"></script>
-<!--script src="https://maps.googleapis.com/maps/api/js?v=2.exp&sensor=true&libraries=places"></script-->
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/mark.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/core.js"></script>
-
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span8">
@@ -54,7 +49,7 @@
         <div class="span4">
             <p>
                 <strong>
-                    Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', 'cadastro/index')?>.
+                    Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', CController::createUrl('cadastro/index'))?>.
                 </strong>
             </p>
         </div>
@@ -81,3 +76,8 @@
 
 <div id="map_canvas"></div>
 
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3.0&key=AIzaSyALPiNlx5KpzDb93X5ecFrbFIjpw0KZXn8&sensor=true&libraries=places"></script>
+<!--script src="https://maps.googleapis.com/maps/api/js?v=2.exp&sensor=true&libraries=places"></script-->
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/mark.js"></script>
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/core.js"></script>
