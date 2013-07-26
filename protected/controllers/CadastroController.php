@@ -5,6 +5,21 @@ class CadastroController extends Controller
 	public function actionIndex()
 	{
         $model = new Usuario;
+
+        if (isset($_POST['Usuario'])) {
+            $model->attributes = $_POST['Usuario'];
+            if ($model->save()){
+                $lf = new LoginForm();
+
+                $lf->setUsername($model->email);
+                $lf->setPassword($model->senha);
+
+                if ($lf->login()) {
+                    $this->redirect(array('site/index'));
+                }
+            }
+        }
+
 		$this->render('index', array('model'=>$model));
 	}
 

@@ -2814,3 +2814,1136 @@ Stack trace:
 REQUEST_URI=/ndd/index.php/cadastro/index?Usuario%5Bemail%5D=rafael%40rafael.com&Usuario%5Bsenha%5D=123123123&Usuario%5Bnome%5D=Jo%C3%A3ozito&yt0=Registrar
 HTTP_REFERER=http://localhost/ndd/index.php/cadastro/index
 ---
+2013/07/26 01:55:51 [error] [php] Undefined index: Usuario (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 01:55:57 [error] [php] Undefined index: Usuario (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 01:56:12 [error] [php] Undefined index:  (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 01:58:45 [error] [php] Undefined index: Usuario (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 02:01:00 [error] [php] Undefined index: Usuario (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 02:01:00 [error] [php] Undefined index: Usuario (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 02:02:10 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.email" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php(13): CComponent->__get('email')
+#1 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CadastroController->actionIndex()
+#2 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('cadastro/index')
+#7 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/ndd/index.php/cadastro/index
+HTTP_REFERER=http://localhost/ndd/index.php/cadastro/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:13:35 [error] [exception.CException] exception 'CException' with message 'Property "Usuario.usr_status" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(143): CComponent->__get('usr_status')
+#1 C:\xampp\htdocs\NDD\protected\components\UserIdentity.php(21): CActiveRecord->__get('usr_status')
+#2 C:\xampp\htdocs\NDD\protected\models\LoginForm.php(66): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php(17): LoginForm->login()
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): CadastroController->actionIndex()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('cadastro/index')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ndd/index.php/cadastro/index
+HTTP_REFERER=http://localhost/ndd/index.php/cadastro/index
+---
+2013/07/26 02:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:18:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php?r=site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 02:50:05 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/index".' in C:\xampp\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('site/index', NULL, true)
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(30): CController->render('site/index')
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ndd/
+---
+2013/07/26 03:53:27 [error] [exception.CException] exception 'CException' with message 'Alias "application.behaviors.EJsonBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(196): YiiBase::import('application.beh...', true)
+#1 C:\xampp\htdocs\framework\base\CComponent.php(326): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\framework\base\CComponent.php(297): CComponent->attachBehavior('EJsonBehavior', Array)
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(388): CComponent->attachBehaviors(Array)
+#4 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(24): CActiveRecord::model('Estabelecimento')
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(30): Estabelecimento::model()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/26 03:53:31 [error] [exception.CException] exception 'CException' with message 'Alias "application.behaviors.EJsonBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\framework\YiiBase.php:316
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(196): YiiBase::import('application.beh...', true)
+#1 C:\xampp\htdocs\framework\base\CComponent.php(326): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\framework\base\CComponent.php(297): CComponent->attachBehavior('EJsonBehavior', Array)
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(388): CComponent->attachBehaviors(Array)
+#4 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(24): CActiveRecord::model('Estabelecimento')
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(30): Estabelecimento::model()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/26 04:00:02 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 04:00:07 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:31)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (31)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/26 05:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:46:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---
+2013/07/26 05:46:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.php/...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/site/index
+---

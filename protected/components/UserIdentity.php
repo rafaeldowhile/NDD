@@ -8,20 +8,23 @@
 class UserIdentity extends CUserIdentity
 {
     private $_id;
+
     public function authenticate()
     {
-        $record=User::model()->findByAttributes(array('username'=>$this->username));
-        if($record===null)
+        $user = Usuario::model()->findByAttributes(array('email'=>$this->username));
+
+        if($user===null) {
             $this->errorCode=self::ERROR_USERNAME_INVALID;
-        else if($record->password!==md5($this->password))
+        } else if(!(md5($user->senha) === md5($this->password))) {
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
-        else
-        {
-            $this->_id=$record->id;
-            $this->setState('title', $record->title);
+        } else {
+            $this->_id=$user->id;
+            $this->username=$user->email;
+            $this->setState('email', $user->email);
+
             $this->errorCode=self::ERROR_NONE;
         }
-        return !$this->errorCode;
+        return $this->errorCode==self::ERROR_NONE;
     }
 
     public function getId()

@@ -25,7 +25,16 @@ class Novidade extends CActiveRecord
 		return parent::model($className);
 	}
 
-	/**
+    public function behaviors() {
+        return array(
+            'EJsonBehavior'=>array(
+                'class'=>'ext.behaviors.EJsonBehavior'
+            ),
+        );
+    }
+
+
+    /**
 	 * @return string the associated database table name
 	 */
 	public function tableName()

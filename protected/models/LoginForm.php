@@ -74,4 +74,12 @@ class LoginForm extends CFormModel
 		else
 			return false;
 	}
+
+    public function setUsername($email) {
+        $this->username = $email;
+    }
+
+    public function setPassword($senha) {
+        $this->password = $senha;
+    }
 }

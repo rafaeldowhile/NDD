@@ -8,8 +8,8 @@
 
 var map;
 var infowindow;
-var inativo = 'images/i7.png';
-var ativo = 'images/i8.png';
+var inativo = 'images/i12.png';
+var ativo = 'images/i11.png';
 
 function initialize() {
 
@@ -38,44 +38,10 @@ function initialize() {
     };
 
     infowindow = new google.maps.InfoWindow();
-    var service = new google.maps.places.PlacesService(map);
-    service.nearbySearch(request, callback);
-}
 
-function callback(results, status) {
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-            createMarker(results[i]);
-        }
-    }
-}
-
-/*
- A cada novo marcador, será consultado no banco de dados se ele já existe.
- */
-function createMarker(place) {
-    var texto = "";
-    var placeLoc = place.geometry.location;
-    var marker = new MarkerWithLabel({
-        map: map,
-        position: place.geometry.location,
-        title: place.name,
-        labelContent: place.name,
-        labelClass: "labels"
-    });
-
-    jQuery.ajax({
-        // The url must be appropriate for your configuration;
-        // this works with the default config of 1.1.11
-        url: 'index.php?r=site/procuraEstabelecimento',
+    var estabelecimentos = $.ajax({
+        url: 'index.php/site/procuraEstabelecimento',
         type: "POST",
-        data: {
-            ajaxData: {
-                latitude: marker.getPosition().lat(),
-                longitude: marker.getPosition().lng(),
-                title: place.name
-            }
-        },
         error: function(xhr,tStatus,e){
             if(!xhr){
                 alert(" We have an error ");
@@ -84,24 +50,67 @@ function createMarker(place) {
                 alert("else: "+e.message); // the great unknown
             }
         },
-        success: function(resp){
-            texto = resp;
-
-            if (texto === '') {
-                marker.setIcon(inativo);
-            } else {
-                marker.setIcon(ativo);
+        success: function(data){
+            data = jQuery.parseJSON(data);
+            for (var i = 0; i < data.length; i++) {
+                createMarker(jQuery.parseJSON(data[i]).jsonDataSource);
             }
         }
     });
 
+    /*var service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);*/
+}
+
+
+function createMarker(estabelecimento) {
+    /*var placeLoc = place.geometry.location;*/
+    var texto = '';
+    var marker = new MarkerWithLabel({
+        map: map,
+        position: new google.maps.LatLng(estabelecimento.attributes.latitude, estabelecimento.attributes.longitude),
+        title: estabelecimento.attributes.nome,
+        labelContent: estabelecimento.attributes.nome,
+        labelClass: "labels"
+    });
+    var novidades = estabelecimento.relations.novidades;
+
+    if (novidades.length > 0) {
+        texto = estabelecimento.relations.novidades[0].texto;
+        marker.setIcon(ativo);
+    } else {
+        marker.setIcon(inativo);
+    }
+
     google.maps.event.addListener(marker, 'click', function() {
-        if (texto !== '') {
-            infowindow.setContent("<h3 style='color: #3A4A9F'>" + place.name  + "</h3>"+ "<p><strong>Novidia: </strong>" + texto + "</p>");
-        } else {
-            infowindow.setContent("<h3 style='color: #1F231E'>" + place.name  + "</h3>"+ "<p><strong>Infelizmente não temos nenhuma novidade hoje.</strong></p>");
+        if (texto === ''){
+            texto = 'Desculpe, mas não temos nenhuma novidade do dia hoje.';
         }
-        infowindow.open(map, this);
+            infowindow.setContent(
+                "<div class=''>" +
+                    "<div class='page-header'>" +
+                    "<h3>" + estabelecimento.attributes.nome + "</h3>" +
+                    "</div>" +
+                    "<div class='row-fluid'>" +
+                        "<div class='span12'>" +
+                            "<blockquote>" +
+
+                                "<p>" + texto + "</p>" +
+                            "</blockquote>" +
+                        "</div>" +
+                    "</div>" +
+                    "<div class='form-actions'>" +
+                        "<p>" +
+                            "<strong>Compartilhe essa novidade e convide seus amigos para aproveitarem!</strong>" +
+                        "</p>" +
+                        "<img src='images/social/fb.png'/>" +
+                        "<img src='images/social/g.png'/>" +
+                        "<img src='images/social/twt.png'/>" +
+                    "</div>" +
+                "</div>"
+            );
+
+    infowindow.open(map, this);
     });
 }
 

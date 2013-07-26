@@ -21,45 +21,31 @@ class SiteController extends Controller
 		);
 	}
 
-	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
-	 */
 	public function actionIndex()
 	{
-        $estab = Estabelecimento::model()->findAll();
-        $this->render('index', array('estab' => $estab));
+        $this->render('index');
 	}
 
-    public function actionProcuraEstabelecimento(){
-        $marker = $_POST["ajaxData"];
+    public function actionProcuraEstabelecimento() {
+        $est = Estabelecimento::model()->findAll();
+        echo CJSON::encode($this->convertModelToArray($est));
+    }
 
-        $new = new Estabelecimento;
-        $new->latitude = $marker['latitude'];
-        $new->longitude = $marker['longitude'];
-
-        /*
-         * Procura pelo estabelecimento
-         */
-        $est = Estabelecimento::model()->findByAttributes(array('latitude' => $new->latitude, 'longitude' => $new->longitude));
-
-        /*
-         * Se não existir, será salvo no banco de dados.
-         */
-        if (!isset($est)) {
-            $new->nome = $marker['title'];
-            $new->save();
-            echo '';
-        } else {
-            /*
-             * Se existir e possuir uma novidade no dia, será retornado o texto na novidade.
-             */
-            $novidade = Novidade::model()->findByAttributes(array('latitude' => $new->latitude, 'longitude' => $new->longitude));
-            if ($novidade != null) {
-                echo $novidade->texto;
-            } else {
-                echo '';
-            }
+    public function convertModelToArray($models) {
+        if (is_array($models))
+            $arrayMode = TRUE;
+        else {
+            $models = array($models);
+            $arrayMode = FALSE;
         }
+
+        $result = array();
+        foreach ($models as $model) {
+            if ($arrayMode)
+                array_push($result, $model->toJSON());
+            else
+                $result = $model->toJSON();
+        }
+        return $result;
     }
 }
