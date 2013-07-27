@@ -26,8 +26,27 @@ class SiteController extends Controller
         $this->render('index');
 	}
 
+    public function actionLogin() {
+        $model = new LoginForm();
+        $mensagem = null;
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes = $_POST['LoginForm'];
+
+            if ($model->login()) {
+                $this->redirect(CController::createUrl('empresa/index'));
+            } else {
+                $mensagem = "Usuário e senha incorretos.";
+            }
+        }
+
+        $this->render('login', array('model'=>$model, 'mensagem'=>$mensagem));
+    }
+
     public function actionProcuraEstabelecimento() {
-        $est = Estabelecimento::model()->findAll();
+        $est = Estabelecimento::model()->with(array('novidades'=>array(
+                                                    'joinType'=>'JOIN',
+                                                    'condition'=>'novidades.data_novidade='.date('yyyy-MM-dd')
+        )))->findAll();
         echo CJSON::encode($this->convertModelToArray($est));
     }
 

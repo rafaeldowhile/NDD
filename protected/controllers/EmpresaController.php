@@ -7,7 +7,21 @@ class EmpresaController extends Controller
 	public function actionIndex()
 	{
         $model = new Estabelecimento();
-		$this->render('index', array('model'=>$model));
+        $mensagem = null;
+        if (isset($_GET['mensagem'])) {
+            $mensagem = $_GET['mensagem'];
+        }
+
+        if(isset($_POST['Estabelecimento'])) {
+            $model->attributes = $_POST['Estabelecimento'];
+            echo $model->cnpj;
+            $model->id_usuario = Yii::app()->user->getId();
+            if ($model->save()) {
+                $mensagem = 'Empresa registrada com sucesso!';
+            }
+        }
+
+		$this->render('index', array('model'=>$model, 'mensagem'=>$mensagem ));
 	}
 
 	// Uncomment the following methods and override them if needed

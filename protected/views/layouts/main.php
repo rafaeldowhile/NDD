@@ -61,8 +61,8 @@
             </div>
             <div class="span3">
                 <h6 style="color: #fff">Fale com o novidia</h6>
-                <div class="row-fluid">
-                    <small>De Segunda a sexta das 09 às 18 hrs</small>
+                <div class="row-fluid" style="color: #fff">
+                    <small>De segunda a sexta das 09 às 18 hrs</small>
                     <small>Porto Alegre, RS - (51) 85047452</small>
                 </div>
             </div>

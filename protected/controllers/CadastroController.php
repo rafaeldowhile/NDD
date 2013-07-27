@@ -12,7 +12,7 @@ class CadastroController extends Controller
             if ($model->save()){
                 $lf = new LoginForm();
                 $lf->setUsername($model->email);
-                $lf->setPassword($model->senha);
+                $lf->setPassword($_POST['Usuario']['senha']);
 
                 if ($lf->login()) {
                     $this->redirect(array('empresa/index'));

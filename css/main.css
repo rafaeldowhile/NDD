@@ -7,5 +7,11 @@
 }
 
 #footer {
+    background-color: #2f2f2f;
     height: 200px;
+}
+
+.top-line {
+    border-top: 5px #08c solid;
+    padding-bottom: 5%;
 }

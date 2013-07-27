@@ -1,14 +1,16 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
+<div class="row-fluid top-line">
+</div>
 <div id="wrap">
     <div class="row-fluid">
         <div class="span3">
             <ul class="nav nav-list">
                 <li class="nav-header">Cadastro</li>
-                <li class="active"><a href="<?php echo Yii::app()->baseUrl;?>/index.php/empresa/index">Empresa</a></li>
+                <li class=""><a href="<?php echo Yii::app()->baseUrl;?>/index.php/empresa/index">Empresa</a></li>
                 <li class="nav-header">Novidades</li>
-                <li class=""><a href="#">Adicionar Novidade</a></li>
-                <li class=""><a href="#">Histórico de Novidades</a></li>
+                <li class=""><a href="<?php echo Yii::app()->baseUrl;?>/index.php/novidade/index">Adicionar Novidade</a></li>
+                <li class=""><a href="<?php echo Yii::app()->baseUrl;?>/index.php/novidade/historico">Histórico de Novidades</a></li>
                 <li class="nav-header">Informações</li>
                 <li class=""><a href="#">Quantidade de Cliques</a></li>
                 <li class=""><a href="#">Avaliação da Empresa</a></li>

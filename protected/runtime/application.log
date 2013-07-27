@@ -4063,3 +4063,404 @@ REQUEST_URI=/ndd/index.php/empresa/index
 in C:\xampp\htdocs\NDD\protected\views\empresa\index.php (17)
 in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (9)
 in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 19:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/admin/index
+---
+2013/07/27 19:42:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estabelecimento/index".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('estabelecimento...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/estabelecimento/index
+---
+2013/07/27 20:07:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "historico".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('historico')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('historico')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/histor...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/novidade/historico
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 20:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "historico".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('historico')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('historico')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/histor...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/novidade/historico
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 20:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "historico".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('historico')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('historico')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/histor...')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/novidade/historico
+HTTP_REFERER=http://localhost/ndd/index.php/novidade/index
+---
+2013/07/27 20:33:16 [error] [exception.CException] exception 'CException' with message 'Property "Novidade.nome" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(143): CComponent->__get('nome')
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('nome')
+#2 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Novidade), 'nome')
+#3 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Novidade), 'nome', Array)
+#4 C:\xampp\htdocs\NDD\protected\views\novidade\index.php(31): CHtml::activeTextField(Object(Novidade), 'nome', Array)
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php(10): CController->render('index', Array)
+#10 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): NovidadeController->actionIndex()
+#11 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/index')
+#16 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/ndd/index.php/novidade/index
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 20:34:27 [error] [exception.CException] exception 'CException' with message 'Property "Novidade.nome" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(143): CComponent->__get('nome')
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('nome')
+#2 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Novidade), 'nome')
+#3 C:\xampp\htdocs\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Novidade), 'nome', Array)
+#4 C:\xampp\htdocs\NDD\protected\views\novidade\index.php(31): CHtml::activeTextField(Object(Novidade), 'nome', Array)
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php(10): CController->render('index', Array)
+#10 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): NovidadeController->actionIndex()
+#11 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/index')
+#16 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/ndd/index.php/novidade/index
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 20:56:52 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 20:57:32 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 20:57:57 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:02:51 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:03:19 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:03:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:04:44 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): NovidadeController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): NovidadeController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): NovidadeController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/novidade/index
+in C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php (22)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:17:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/index".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('login/index')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/login/index
+---
+2013/07/27 21:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/index".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('login/index')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/login/index
+---
+2013/07/27 21:40:37 [error] [php] Object of class LoginForm could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/login
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (38)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:45:07 [error] [php] Array to string conversion (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/login
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (37)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:52:16 [error] [php] Undefined index: senha (C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php:15)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): CadastroController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): CadastroController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CadastroController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/cadastro/index
+in C:\xampp\htdocs\NDD\protected\controllers\CadastroController.php (15)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:56:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ndd`.`estabelecimento`, CONSTRAINT `FK_ESTABELECIMENTO_USUARIO` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `estabelecimento` (`nome`, `latitude`, `longitude`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (17)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 21:56:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ndd`.`estabelecimento`, CONSTRAINT `FK_ESTABELECIMENTO_USUARIO` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `estabelecimento` (`nome`, `latitude`, `longitude`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php(17): CActiveRecord->save()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): EmpresaController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('empresa/index')
+#9 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ndd/index.php/empresa/index
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 22:01:26 [warning] [application] Failed to set unsafe attribute "cnpj" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:01:26 [warning] [application] Failed to set unsafe attribute "endereco" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:01:26 [warning] [application] Failed to set unsafe attribute "telefone" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:03:46 [warning] [application] Failed to set unsafe attribute "cnpj" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:03:46 [warning] [application] Failed to set unsafe attribute "endereco" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:03:46 [warning] [application] Failed to set unsafe attribute "telefone" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (16)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:05:07 [error] [exception.CException] exception 'CException' with message 'Estabelecimento and its behaviors do not have a method or closure named "toJSON".' in C:\xampp\htdocs\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(225): CComponent->__call('toJSON', Array)
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): CActiveRecord->__call('toJSON', Array)
+#2 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): Estabelecimento->toJSON()
+#3 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): SiteController->convertModelToArray(Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/27 22:05:10 [error] [exception.CException] exception 'CException' with message 'Estabelecimento and its behaviors do not have a method or closure named "toJSON".' in C:\xampp\htdocs\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(225): CComponent->__call('toJSON', Array)
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): CActiveRecord->__call('toJSON', Array)
+#2 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): Estabelecimento->toJSON()
+#3 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): SiteController->convertModelToArray(Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/27 22:06:23 [error] [exception.CException] exception 'CException' with message 'Estabelecimento and its behaviors do not have a method or closure named "toJSON".' in C:\xampp\htdocs\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(225): CComponent->__call('toJSON', Array)
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): CActiveRecord->__call('toJSON', Array)
+#2 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(61): Estabelecimento->toJSON()
+#3 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): SiteController->convertModelToArray(Array)
+#4 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#5 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#9 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#10 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/27 22:19:31 [error] [exception.CDbException] exception 'CDbException' with message 'Table "novidade" does not have a column named "$data_novidade".' in C:\xampp\htdocs\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\xampp\htdocs\NDD\protected\controllers\NovidadeController.php(28): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): NovidadeController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('novidade/index')
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/ndd/index.php/novidade/index
+HTTP_REFERER=http://localhost/ndd/index.php/empresa/index
+---
+2013/07/27 22:27:49 [error] [php] Use of undefined constant yyyy - assumed 'yyyy' (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:27:50 [error] [php] Use of undefined constant yyyy - assumed 'yyyy' (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:28:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade = 13131313-JulJul-2727).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (48)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:28:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade = 13131313-JulJul-2727)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(48): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/27 22:29:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2727).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (49)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 22:29:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2727)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(49): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---

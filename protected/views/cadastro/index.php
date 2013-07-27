@@ -12,36 +12,6 @@
         </div>
     </div>
 
-    <div class="row-fluid">
-                   <?php $form=$this->beginWidget('CActiveForm', array(
-                   'id'=>'usuario-form',
-                   'enableClientValidation'=>true,
-                   'clientOptions'=>array(
-                       'validateOnSubmit'=>true,
-                   ),
-                   'htmlOptions'=>array('class'=>'form-inline')
-               )); ?>
-
-                   <?php echo CHtml::activeTextField($model,
-                   'email',
-                   array('id' => 'usuario',
-                       'placeholder'=>'Seu Email',
-                       'required'=>'true',
-                       'size' => 60))?>
-
-                   <?php echo CHtml::activePasswordField($model,
-                   'senha',
-                   array('id' => 'senha',
-                       'placeholder' => 'Nova Senha',
-                       'required'=>'true',
-                       'size' => 60)) ?>
-
-
-                   <?php echo CHtml::submitButton('Registrar', array('class'=>'btn btn-small')) ?>
-                   <?php $this->endWidget(); ?>
-
-    </div>
-
     <div class="row-fluid" style="">
                 <?php $form=$this->beginWidget('CActiveForm', array(
                 'id'=>'usuario-form',
