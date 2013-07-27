@@ -3968,3 +3968,98 @@ Stack trace:
 REQUEST_URI=/ndd/index.php/cadastro/index
 HTTP_REFERER=http://localhost/ndd/
 ---
+2013/07/27 04:38:45 [error] [php] include(appli.php): failed to open stream: No such file or directory (C:\xampp\htdocs\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(146): import()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(172): AdminController->createWidget()
+#3 C:\xampp\htdocs\NDD\protected\views\layouts\column2.php(12): AdminController->widget()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#6 C:\xampp\htdocs\framework\web\CController.php(784): AdminController->renderFile()
+#7 C:\xampp\htdocs\NDD\protected\controllers\AdminController.php(9): AdminController->render()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/admin/index
+in C:\xampp\htdocs\NDD\protected\views\layouts\column2.php (12)
+in C:\xampp\htdocs\NDD\protected\controllers\AdminController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 04:39:09 [error] [php] include(appli.php): failed to open stream: No such file or directory (C:\xampp\htdocs\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWidgetFactory.php(146): import()
+#1 C:\xampp\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\xampp\htdocs\framework\web\CBaseController.php(172): AdminController->createWidget()
+#3 C:\xampp\htdocs\NDD\protected\views\layouts\column2.php(12): AdminController->widget()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\framework\web\CBaseController.php(95): AdminController->renderInternal()
+#6 C:\xampp\htdocs\framework\web\CController.php(784): AdminController->renderFile()
+#7 C:\xampp\htdocs\NDD\protected\controllers\AdminController.php(9): AdminController->render()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\framework\web\CController.php(286): AdminController->runAction()
+#11 C:\xampp\htdocs\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): AdminController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/admin/index
+in C:\xampp\htdocs\NDD\protected\views\layouts\column2.php (12)
+in C:\xampp\htdocs\NDD\protected\controllers\AdminController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 04:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/admin/index
+---
+2013/07/27 05:26:47 [error] [php] Undefined variable: model (C:\xampp\htdocs\NDD\protected\views\empresa\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): EmpresaController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(782): EmpresaController->renderPartial()
+#2 C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php(9): EmpresaController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): EmpresaController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): EmpresaController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): EmpresaController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): EmpresaController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/empresa/index
+in C:\xampp\htdocs\NDD\protected\views\empresa\index.php (17)
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/27 05:29:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/site/procuraEstabelecimento".' in C:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/site/...')
+#1 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ndd/index.php/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/index.php/
+---
+2013/07/27 05:38:03 [error] [php] Undefined variable: model (C:\xampp\htdocs\NDD\protected\views\empresa\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(869): EmpresaController->renderFile()
+#1 C:\xampp\htdocs\framework\web\CController.php(782): EmpresaController->renderPartial()
+#2 C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php(9): EmpresaController->render()
+#3 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): EmpresaController->actionIndex()
+#4 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\framework\web\CController.php(286): EmpresaController->runAction()
+#6 C:\xampp\htdocs\framework\web\CController.php(265): EmpresaController->runActionWithFilters()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(282): EmpresaController->run()
+#8 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/empresa/index
+in C:\xampp\htdocs\NDD\protected\views\empresa\index.php (17)
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (9)
+in C:\xampp\htdocs\NDD\index.php (13)

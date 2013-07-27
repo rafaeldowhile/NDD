@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/maps.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.10.0.min.js"></script>
@@ -22,7 +23,7 @@
     <div class="container">
         <div class="row-fluid">
             <div class="span3">
-                <h6>Sobre o novidia</h6>
+                <h6 style="color: #fff">Sobre o novidia</h6>
                 <div class="row-fluid">
                     <a href="#">Quem somos</a>
                 </div>
@@ -39,14 +40,14 @@
                     <a href="#">Contato</a>
                 </div>
             </div>
-            <div class="span3">
-                <h6>Apareça no novidia</h6>
+            <div class="span3" style="color: #fff">
+                <h5 style="color: #fff">Apareça no novidia</h5>
                 <div class="row-fluid">
                     <a href="#">Cadastre-se e apareça</a>
                 </div>
 
             </div>
-            <div class="span3">
+            <div class="span3" style="color: #fff">
                 <h6>Siga o novidia</h6>
                 <div class="row-fluid">
                     <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/fb.png" width="20%"/> </a>
@@ -59,7 +60,7 @@
                 </div>
             </div>
             <div class="span3">
-                <h6>Fale com o novidia</h6>
+                <h6 style="color: #fff">Fale com o novidia</h6>
                 <div class="row-fluid">
                     <small>De Segunda a sexta das 09 às 18 hrs</small>
                     <small>Porto Alegre, RS - (51) 85047452</small>

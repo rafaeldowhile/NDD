@@ -1,25 +1,12 @@
 <?php
 
-class CadastroController extends Controller
+class EmpresaController extends Controller
 {
+    public $layout='//layouts/column2';
 
 	public function actionIndex()
 	{
-        $model = new Usuario;
-
-        if (isset($_POST['Usuario'])) {
-            $model->attributes = $_POST['Usuario'];
-            if ($model->save()){
-                $lf = new LoginForm();
-                $lf->setUsername($model->email);
-                $lf->setPassword($model->senha);
-
-                if ($lf->login()) {
-                    $this->redirect(array('empresa/index'));
-                }
-            }
-        }
-
+        $model = new Estabelecimento();
 		$this->render('index', array('model'=>$model));
 	}
 
