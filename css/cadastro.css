@@ -5,8 +5,12 @@
     margin: 0 auto -200px;
     zoom: 1;
     background-size: cover;
-    background-image: url(images/wal.jpg);
     background-position: center;
+    background-image: url(images/bg3.jpg);
+}
+
+#footer {
+    opacity: 0.9;
 }
 
 .form-singin {

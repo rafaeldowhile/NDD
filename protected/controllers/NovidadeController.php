@@ -38,7 +38,9 @@ class NovidadeController extends Controller
 
     public function actionHistorico()
     {
-        $this->render('historico');
+        $estabelecimento = Estabelecimento::model()->findByAttributes(array('id_usuario'=>Yii::app()->user->getId()));
+        $listaNovidades = $estabelecimento->novidades;
+        $this->render('historico', array('listaNovidades'=>$listaNovidades));
     }
 
 	// Uncomment the following methods and override them if needed

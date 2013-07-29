@@ -63,6 +63,9 @@
             'required' => 'true',
             'size' => 60))?>
 
+        <label>Categoria</label>
+        <?php echo CHtml::activeDropDownList($model, 'id_categoria', CHtml::listData(Categoria::model()->findAll(), 'id', 'nome'), array('prompt' => 'Selecione a categoria')); ?>
+
         <?php echo CHtml::activeHiddenField($model, 'latitude', array('id'=>'latitude')); ?>
         <?php echo CHtml::activeHiddenField($model, 'longitude', array('id'=>'longitude')); ?>
 

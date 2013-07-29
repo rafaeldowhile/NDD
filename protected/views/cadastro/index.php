@@ -8,11 +8,11 @@
 
     <div class="row-fluid">
         <div class="page-header">
-                <h1><a class="well-large" href="<?php echo Yii::app()->baseUrl;?>/index.php">novidia</a> <small class="text-info">Novidades do dia dos melhores estabelecimentos!</small></h1>
+                <h1><a class="well-large" href="<?php echo Yii::app()->baseUrl;?>/index.php"><img src="<?php echo Yii::app()->baseUrl?>/images/logo.png"/></a> <small style="color: #333">Novidades do dia dos melhores estabelecimentos!</small></h1>
         </div>
     </div>
 
-    <div class="row-fluid" style="">
+    <div class="row-fluid teste">
                 <?php $form=$this->beginWidget('CActiveForm', array(
                 'id'=>'usuario-form',
                 'enableClientValidation'=>true,

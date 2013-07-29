@@ -6,7 +6,12 @@ class EmpresaController extends Controller
 
 	public function actionIndex()
 	{
-        $model = new Estabelecimento();
+        $model = Estabelecimento::model()->findByAttributes(array('id_usuario'=>Yii::app()->user->getId()));
+
+        if ($model === null) {
+            $model = new Estabelecimento();
+        }
+
         $mensagem = null;
         if (isset($_GET['mensagem'])) {
             $mensagem = $_GET['mensagem'];
@@ -14,7 +19,6 @@ class EmpresaController extends Controller
 
         if(isset($_POST['Estabelecimento'])) {
             $model->attributes = $_POST['Estabelecimento'];
-            echo $model->cnpj;
             $model->id_usuario = Yii::app()->user->getId();
             if ($model->save()) {
                 $mensagem = 'Empresa registrada com sucesso!';

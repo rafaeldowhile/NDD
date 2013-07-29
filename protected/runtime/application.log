@@ -4464,3 +4464,576 @@ Stack trace:
 REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
 HTTP_REFERER=http://localhost/ndd/
 ---
+2013/07/28 04:56:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2828).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (49)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/28 04:56:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2828)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(49): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/28 04:56:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2828).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (49)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/28 04:56:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`)  WHERE (novidades.data_novidade=13131313-JulJul-2828)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(49): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:14:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (novidades.data_novidade = 13131313-JulJul-2929).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 02:14:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (novidades.data_novidade = 13131313-JulJul-2929)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:14:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 02:14:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:19:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 02:19:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:44:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929).
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (48)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 02:44:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'JulJul' in 'where clause'. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`)  WHERE (data_novidade = 13131313-JulJul-2929)' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(48): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:47:32 [error] [exception.CException] exception 'CException' with message 'Property "CHasManyRelation.data_novidade" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1941): CComponent->__set('data_novidade', '13131313-JulJul...')
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2356): CBaseActiveRelation->__construct('novidades', 'Novidade', 'latitude, longi...', Array)
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2337): CActiveRecordMetaData->addRelation('novidades', Array)
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Estabelecimento))
+#4 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): CActiveRecord::model('Estabelecimento')
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(46): Estabelecimento::model()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:47:44 [error] [php] Non-static method Date_TimeZone::isValidID() should not be called statically (C:\xampp\php\pear\Date\TimeZone.php:4717)
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(421): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(77): spl_autoload_call()
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2335): Estabelecimento->relations()
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#5 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): model()
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(46): model()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date.php (55)
+2013/07/29 02:48:03 [error] [php] Non-static method Date_TimeZone::isValidID() should not be called statically (C:\xampp\php\pear\Date\TimeZone.php:4717)
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(421): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(77): spl_autoload_call()
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2335): Estabelecimento->relations()
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#5 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): model()
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(46): model()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date.php (55)
+2013/07/29 02:48:14 [error] [php] Non-static method Date_TimeZone::isValidID() should not be called statically (C:\xampp\php\pear\Date\TimeZone.php:4717)
+Stack trace:
+#0 C:\xampp\htdocs\framework\YiiBase.php(421): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(77): spl_autoload_call()
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2335): Estabelecimento->relations()
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#5 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): model()
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(46): model()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#10 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date.php (55)
+2013/07/29 02:49:37 [error] [exception.CException] exception 'CException' with message 'Property "CHasManyRelation.novidades.data_novidade" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1941): CComponent->__set('novidades.data_...', Object(DateTime))
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2356): CBaseActiveRelation->__construct('novidades', 'Novidade', 'latitude, longi...', Array)
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2337): CActiveRecordMetaData->addRelation('novidades', Array)
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Estabelecimento))
+#4 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): CActiveRecord::model('Estabelecimento')
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(46): Estabelecimento::model()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 02:50:52 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (46)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 02:51:14 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:48)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (48)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:06:05 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\framework\db\CDbCommand.php:508)
+Stack trace:
+#0 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(126): CDbCommand->queryRow()
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): Estabelecimento->comNovidade()
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (126)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:06:15 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\framework\db\CDbCommand.php:508)
+Stack trace:
+#0 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(126): CDbCommand->queryRow()
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(26): Estabelecimento->comNovidade()
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (126)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:06:41 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\framework\db\CDbCommand.php:508)
+Stack trace:
+#0 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(126): CDbCommand->queryRow()
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(26): Estabelecimento->comNovidade()
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (126)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:06:43 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\framework\db\CDbCommand.php:508)
+Stack trace:
+#0 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(126): CDbCommand->queryRow()
+#1 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(26): Estabelecimento->comNovidade()
+#2 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (126)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:07:26 [error] [php] parse_str() expects parameter 1 to be string, object given (C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php:125)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (125)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:08:10 [error] [php] parse_str() expects parameter 1 to be string, object given (C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php:125)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#1 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php (125)
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:09:08 [error] [php] Array to string conversion (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:09:32 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:09:53 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (26)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:09:59 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (49)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:10:23 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (49)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:18:01 [error] [exception.CException] exception 'CException' with message 'Property "CHasManyRelation.data_novidade" is not defined.' in C:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1941): CComponent->__set('data_novidade', '2013-07-27')
+#1 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2356): CBaseActiveRelation->__construct('novidades', 'Novidade', 'latitude, longi...', Array)
+#2 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(2337): CActiveRecordMetaData->addRelation('novidades', Array)
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Estabelecimento))
+#4 C:\xampp\htdocs\NDD\protected\models\Estabelecimento.php(29): CActiveRecord::model('Estabelecimento')
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): Estabelecimento::model()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 03:21:07 [error] [php] Array to string conversion (C:\xampp\htdocs\framework\db\ar\CActiveFinder.php:1063)
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(748): CJoinQuery->join()
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(420): CJoinElement->buildQuery()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find()
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query()
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): Estabelecimento->query()
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): Estabelecimento->findAll()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:21:20 [error] [php] Array to string conversion (C:\xampp\htdocs\framework\db\ar\CActiveFinder.php:1063)
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(748): CJoinQuery->join()
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(420): CJoinElement->buildQuery()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find()
+#3 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query()
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): Estabelecimento->query()
+#5 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(47): Estabelecimento->findAll()
+#6 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#7 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (47)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:41:13 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (50)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:41:20 [error] [php] Object of class DateTime could not be converted to string (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (50)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:41:40 [error] [php] parse_str() expects parameter 1 to be string, object given (C:\xampp\htdocs\NDD\protected\controllers\SiteController.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\xampp\htdocs\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\xampp\htdocs\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (50)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:44:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`) AND (novidades.data_novidade = ) .
+in C:\xampp\htdocs\NDD\protected\controllers\SiteController.php (54)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 03:44:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT `t`.`latitude` AS `t0_c0`, `t`.`longitude` AS `t0_c1`, `t`.`id_usuario` AS `t0_c2`, `t`.`nome` AS `t0_c3`, `t`.`cnpj` AS `t0_c4`, `t`.`endereco` AS `t0_c5`, `t`.`telefone` AS `t0_c6`, `novidades`.`latitude` AS `t1_c0`, `novidades`.`longitude` AS `t1_c1`, `novidades`.`data_novidade` AS `t1_c2`, `novidades`.`texto` AS `t1_c3` FROM `estabelecimento` `t`  LEFT OUTER JOIN `novidade` `novidades` ON (`novidades`.`latitude`=`t`.`latitude`) AND (`novidades`.`longitude`=`t`.`longitude`) AND (novidades.data_novidade = ) ' in C:\xampp\htdocs\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\xampp\htdocs\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(761): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\xampp\htdocs\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1302): CActiveFinder->query(Object(CDbCriteria), true)
+#5 C:\xampp\htdocs\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\xampp\htdocs\NDD\protected\controllers\SiteController.php(54): CActiveRecord->findAll()
+#7 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): SiteController->actionProcuraEstabelecimento()
+#8 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('procuraEstabele...')
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/procuraEst...')
+#13 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/ndd/index.php/site/procuraEstabelecimento
+HTTP_REFERER=http://localhost/ndd/
+---
+2013/07/29 05:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "lg".' in C:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('lg')
+#1 C:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('lg')
+#2 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('site/lg')
+#3 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\NDD\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ndd/index.php/site/lg
+---
+2013/07/29 06:35:19 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\xampp\htdocs\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\xampp\htdocs\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\xampp\htdocs\framework\web\helpers\CHtml.php(806): tag()
+#2 C:\xampp\htdocs\NDD\protected\views\empresa\index.php(67): dropDownList()
+#3 C:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\framework\web\CBaseController.php(95): EmpresaController->renderInternal()
+#5 C:\xampp\htdocs\framework\web\CController.php(869): EmpresaController->renderFile()
+#6 C:\xampp\htdocs\framework\web\CController.php(782): EmpresaController->renderPartial()
+#7 C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php(28): EmpresaController->render()
+#8 C:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): EmpresaController->actionIndex()
+#9 C:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\framework\web\CController.php(286): EmpresaController->runAction()
+#11 C:\xampp\htdocs\framework\web\CController.php(265): EmpresaController->runActionWithFilters()
+#12 C:\xampp\htdocs\framework\web\CWebApplication.php(282): EmpresaController->run()
+#13 C:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\NDD\index.php(13): CWebApplication->run()
+REQUEST_URI=/ndd/index.php/empresa/index
+in C:\xampp\htdocs\NDD\protected\views\empresa\index.php (67)
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (28)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 06:36:04 [warning] [application] Failed to set unsafe attribute "categoria" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (21)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 06:36:07 [warning] [application] Failed to set unsafe attribute "categoria" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (21)
+in C:\xampp\htdocs\NDD\index.php (13)
+2013/07/29 06:37:51 [warning] [application] Failed to set unsafe attribute "categoria" of "Estabelecimento".
+in C:\xampp\htdocs\NDD\protected\controllers\EmpresaController.php (21)
+in C:\xampp\htdocs\NDD\index.php (13)

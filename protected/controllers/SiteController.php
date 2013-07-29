@@ -43,7 +43,15 @@ class SiteController extends Controller
     }
 
     public function actionProcuraEstabelecimento() {
-        $est = Estabelecimento::model()->findAll();
+
+        $est = Estabelecimento::model()->with(array(
+                                                'novidades'=>array(
+                                                                    'joinType'=>'LEFT OUTER JOIN',
+                                                                    'on'=> 'novidades.data_novidade = "' . (new DateTime())->format('Y-m-d') . '"'
+                                                                    )
+                                                )
+                                            )->findAll();
+
         echo CJSON::encode($this->convertModelToArray($est));
     }
 
