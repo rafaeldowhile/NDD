@@ -1,9 +1,16 @@
 <div id="divLogin" class="container-fluid div_login text-center">
     <div class="form-inline container-fluid text-center">
-        <input id="txtEndereco" placeholder="Login" type="text" class="input-medium"/>
-        <input id="txtEndereco" placeholder="Senha" type="password" class="input-medium"/>
-        <a href="#" id="btnSearch"><i class="icon-ok icon-white"></i></a>
+        <input id="txtLogin" placeholder="Login" type="text" class="input-medium"/>
+        <input id="txtPassword" placeholder="Senha" type="password" class="input-medium"/>
+        <a href="#" id="btnLogin"><i class="icon-ok icon-white"></i></a>
         <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
+        
+        <div class="row form-inline container-fluid">
+            <label class="checkbox" style="color: #FFF;">
+                <input type="checkbox" name="remember" id="remember"/>Mantenha-me conectado
+            </label>
+            <a href="#">Esqueci minha senha</a>
+        </div>
     </div>
 </div>
 <div class="container-fluid bg-1">
