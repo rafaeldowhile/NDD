@@ -63,19 +63,18 @@
             'required' => 'true',
             'size' => 60))?>
 
+
+
         <label>Categorias</label>
         <div class="input-append">
             <input id="categoria" class="span12" id="teste" type="text"/>
             <button class="btn" type="button">Adicionar</button>
         </div>
 
-        <ul class="unstyled">
-            <li>
-                <input type="text" name="Categoria[1]" id="Categoria[1]"/>
-                <a href="#"><i class="icon-remove"></i></a>
-            </li>
-        </ul>
+        <div id="listaCategorias">
+        </div>
 
+        <input type="hidden" id="Size_categoria" value="<?php echo count($model->categorias)?>"/>
         <?php echo CHtml::activeHiddenField($model, 'latitude', array('id'=>'latitude')); ?>
         <?php echo CHtml::activeHiddenField($model, 'longitude', array('id'=>'longitude')); ?>
 
@@ -87,31 +86,62 @@
 </div>
 
 <script>
+    function onCategoriaDeleteClick() {
+        $(this).parent(".categoria-item")
+                .off("click")
+                .hide("slow", function () {
+                    $(this).remove();
+                })
+    }
+
+    function addCategoria(categoria) {
+        var i = $("#Size_categoria");
+        var $cat = $("<div/>")
+                .addClass("categoria-item")
+                .append($("<div/>")
+                        .addClass("categoria-text")
+                        .append($("<input>")
+                                    .prop('type', 'text')
+                                    .prop('id', "Categoria[" + i.val() + "]")
+                                    .prop('name', "Categoria[" + i.val() + "]")
+                                    .prop('disabled', true)
+                                    .val(categoria.label)
+                                ))
+                .append($("<div/>")
+                        .addClass("categoria-delete")
+                        .append($("<a/>").text("Delete")))
+                .append($("<div/>")
+                        .addClass("clear"));
+
+        $("#listaCategorias").append($cat);
+
+        $(".categoria-delete").click(onCategoriaDeleteClick);
+
+        i.val(parseFloat(i.val()) + 1);
+    }
+
     $(document).ready(function () {
 
         $("#telefone").mask("(99) 9999-9999");
 
-
-
         $("#categoria").autocomplete({
             source: function(request, response) {
-                alert(request.term);
                 $.ajax({
                     type: 'GET',
                     data: {'categoria': request.term},
                     url: 'findCategorias'
                 }).success(function(data){
-                            alert(data);
-                            response($.map(results, function (item) {
+                            data = jQuery.parseJSON(data);
+                            response($.map(data, function (item) {
                                 return {
-                                    label: item.id,
-                                    value: item.nome
+                                    label: item.nome,
+                                    value: item.id
                                 }
                             }))
                         });
             },
             select: function (event, ui){
-
+                addCategoria(ui.item);
             }
         });
 
