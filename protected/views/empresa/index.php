@@ -63,8 +63,18 @@
             'required' => 'true',
             'size' => 60))?>
 
-        <label>Categoria</label>
-        <?php echo CHtml::activeDropDownList($model, 'id_categoria', CHtml::listData(Categoria::model()->findAll(), 'id', 'nome'), array('prompt' => 'Selecione a categoria')); ?>
+        <label>Categorias</label>
+        <div class="input-append">
+            <input id="categoria" class="span12" id="teste" type="text"/>
+            <button class="btn" type="button">Adicionar</button>
+        </div>
+
+        <ul class="unstyled">
+            <li>
+                <input type="text" name="Categoria[1]" id="Categoria[1]"/>
+                <a href="#"><i class="icon-remove"></i></a>
+            </li>
+        </ul>
 
         <?php echo CHtml::activeHiddenField($model, 'latitude', array('id'=>'latitude')); ?>
         <?php echo CHtml::activeHiddenField($model, 'longitude', array('id'=>'longitude')); ?>
@@ -80,6 +90,30 @@
     $(document).ready(function () {
 
         $("#telefone").mask("(99) 9999-9999");
+
+
+
+        $("#categoria").autocomplete({
+            source: function(request, response) {
+                alert(request.term);
+                $.ajax({
+                    type: 'GET',
+                    data: {'categoria': request.term},
+                    url: 'findCategorias'
+                }).success(function(data){
+                            alert(data);
+                            response($.map(results, function (item) {
+                                return {
+                                    label: item.id,
+                                    value: item.nome
+                                }
+                            }))
+                        });
+            },
+            select: function (event, ui){
+
+            }
+        });
 
         var geocoder = new google.maps.Geocoder();
 

@@ -4,14 +4,13 @@
  * This is the model class for table "novidade".
  *
  * The followings are the available columns in table 'novidade':
- * @property string $latitude
- * @property string $longitude
+ * @property integer $id
+ * @property integer $id_empresa
  * @property string $data_novidade
  * @property string $texto
  *
  * The followings are the available model relations:
- * @property Estabelecimento $latitude0
- * @property Estabelecimento $longitude0
+ * @property Estabelecimento $idEmpresa
  */
 class Novidade extends CActiveRecord
 {
@@ -25,16 +24,7 @@ class Novidade extends CActiveRecord
 		return parent::model($className);
 	}
 
-    public function behaviors() {
-        return array(
-            'EJsonBehavior'=>array(
-                'class'=>'ext.behaviors.EJsonBehavior'
-            ),
-        );
-    }
-
-
-    /**
+	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -50,12 +40,12 @@ class Novidade extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('latitude, longitude, data_novidade, texto', 'required'),
-			array('latitude, longitude', 'length', 'max'=>45),
+			array('id_empresa, data_novidade, texto', 'required'),
+			array('id_empresa', 'numerical', 'integerOnly'=>true),
 			array('texto', 'length', 'max'=>140),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('latitude, longitude, data_novidade, texto', 'safe', 'on'=>'search'),
+			array('id, id_empresa, data_novidade, texto', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,8 +57,7 @@ class Novidade extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'latitude0' => array(self::BELONGS_TO, 'Estabelecimento', 'latitude'),
-			'longitude0' => array(self::BELONGS_TO, 'Estabelecimento', 'longitude'),
+			'idEmpresa' => array(self::BELONGS_TO, 'Estabelecimento', 'id_empresa'),
 		);
 	}
 
@@ -78,8 +67,8 @@ class Novidade extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'latitude' => 'Latitude',
-			'longitude' => 'Longitude',
+			'id' => 'ID',
+			'id_empresa' => 'Id Empresa',
 			'data_novidade' => 'Data Novidade',
 			'texto' => 'Texto',
 		);
@@ -96,8 +85,8 @@ class Novidade extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('latitude',$this->latitude,true);
-		$criteria->compare('longitude',$this->longitude,true);
+		$criteria->compare('id',$this->id);
+		$criteria->compare('id_empresa',$this->id_empresa);
 		$criteria->compare('data_novidade',$this->data_novidade,true);
 		$criteria->compare('texto',$this->texto,true);
 

@@ -1,29 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "estabelecimento".
+ * This is the model class for table "novidade".
  *
- * The followings are the available columns in table 'estabelecimento':
- * @property integer $id
- * @property string $cnpj
+ * The followings are the available columns in table 'novidade':
  * @property string $latitude
  * @property string $longitude
- * @property integer $id_usuario
- * @property string $nome
- * @property string $endereco
- * @property string $telefone
+ * @property string $data_novidade
+ * @property string $texto
  *
  * The followings are the available model relations:
- * @property Usuario $idUsuario
- * @property Categoria[] $categorias
- * @property Novidade[] $novidades
+ * @property Estabelecimento $latitude0
+ * @property Estabelecimento $longitude0
  */
-class Estabelecimento extends CActiveRecord
+class Novidade extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Estabelecimento the static model class
+	 * @return Novidade the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -38,12 +33,13 @@ class Estabelecimento extends CActiveRecord
         );
     }
 
-	/**
+
+    /**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'estabelecimento';
+		return 'novidade';
 	}
 
 	/**
@@ -54,14 +50,12 @@ class Estabelecimento extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cnpj, latitude, longitude, id_usuario, nome, endereco, telefone', 'required'),
-			array('id_usuario', 'numerical', 'integerOnly'=>true),
-			array('cnpj', 'length', 'max'=>18),
-			array('latitude, longitude, nome, telefone', 'length', 'max'=>45),
-			array('endereco', 'length', 'max'=>255),
+			array('latitude, longitude, data_novidade, texto', 'required'),
+			array('latitude, longitude', 'length', 'max'=>45),
+			array('texto', 'length', 'max'=>140),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, cnpj, latitude, longitude, id_usuario, nome, endereco, telefone', 'safe', 'on'=>'search'),
+			array('latitude, longitude, data_novidade, texto', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,9 +67,8 @@ class Estabelecimento extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idUsuario' => array(self::BELONGS_TO, 'Usuario', 'id_usuario'),
-			'categorias' => array(self::MANY_MANY, 'Categoria', 'estabelecimento_categoria(id_estabelecimento, id_categoria)'),
-			'novidades' => array(self::HAS_MANY, 'Novidade', 'id_empresa'),
+			'latitude0' => array(self::BELONGS_TO, 'Estabelecimento', 'latitude'),
+			'longitude0' => array(self::BELONGS_TO, 'Estabelecimento', 'longitude'),
 		);
 	}
 
@@ -85,14 +78,10 @@ class Estabelecimento extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'cnpj' => 'Cnpj',
 			'latitude' => 'Latitude',
 			'longitude' => 'Longitude',
-			'id_usuario' => 'Id Usuario',
-			'nome' => 'Nome',
-			'endereco' => 'Endereco',
-			'telefone' => 'Telefone',
+			'data_novidade' => 'Data Novidade',
+			'texto' => 'Texto',
 		);
 	}
 
@@ -107,14 +96,10 @@ class Estabelecimento extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('cnpj',$this->cnpj,true);
 		$criteria->compare('latitude',$this->latitude,true);
 		$criteria->compare('longitude',$this->longitude,true);
-		$criteria->compare('id_usuario',$this->id_usuario);
-		$criteria->compare('nome',$this->nome,true);
-		$criteria->compare('endereco',$this->endereco,true);
-		$criteria->compare('telefone',$this->telefone,true);
+		$criteria->compare('data_novidade',$this->data_novidade,true);
+		$criteria->compare('texto',$this->texto,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
