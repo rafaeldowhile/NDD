@@ -1,6 +1,14 @@
+<div id="divLogin" class="container-fluid div_login text-center">
+    <div class="form-inline container-fluid text-center">
+        <input id="txtEndereco" placeholder="Login" type="text" class="input-medium"/>
+        <input id="txtEndereco" placeholder="Senha" type="password" class="input-medium"/>
+        <a href="#" id="btnSearch"><i class="icon-ok icon-white"></i></a>
+        <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
+    </div>
+</div>
 <div class="container-fluid bg-1">
     <div class="pull-right">
-        <a class="btn btn-primary btn-medium"><i class="icon-user icon-white"></i></a>
+        <a id="openLogin" class="btn btn-primary btn-medium"><i class="icon-user icon-white"></i></a>
         <a id="openSearch" class="btn btn-primary btn-medium"><i class="icon-search icon-white"></i></a>
     </div>
     <div class="row-fluid text-center logo_home">
@@ -36,6 +44,7 @@
 <script>
     $(document).ready(function () {
         $("#divSearch").css("display", "none");
+        $("#divLogin").css("display", "none");
         
         var geocoder = new google.maps.Geocoder();
 
@@ -72,31 +81,44 @@
     $("#btnSearch").click(function(){
         var latitude;
         var longitude;
+        var geocoder = new google.maps.Geocoder();
         geocoder.geocode({ 'address': $("#txtEndereco").val() + ', Brasil', 'region': 'BR' }, function (results, status) {
             $.map(results, function (item) {
-                latitude = item.geometry.location.lat();
-                longitude = item.geometry.location.lng();
+//                latitude = item.geometry.location.lat();
+//                longitude = item.geometry.location.lng();
+                $.ajax({
+                    url: 'index.php/site/findEstabelecimento',
+                    type: "POST",
+                    data: { latitude: item.geometry.location.lat(), longitude: item.geometry.location.lng() },
+                    success: function(data){
+                        data = jQuery.parseJSON(data);
+                        for (var i = 0; i < data.length; i++) {
+                            createMarker(jQuery.parseJSON(data[i]).jsonDataSource);
+                        }
+                    }
+                });
             });
         });
-        $.ajax({
-            url: 'index.php/site/findEstabelecimento',
-            type: "POST",
-            data: { latitude: latitude, longitude: longitude },
-            success: function(data){
-                data = jQuery.parseJSON(data);
-                for (var i = 0; i < data.length; i++) {
-                    createMarker(jQuery.parseJSON(data[i]).jsonDataSource);
-                }
-            }
-        });
+        
+        
     });
     
     $("#closeSearch").click(function(){
         $("#divSearch").slideUp("slow");
+        $("#txtEndereco").val("");
     });
     
     $("#openSearch").click(function(){
         $("#divSearch").slideDown("slow");
         $("#txtEndereco").focus();
+    });
+    
+    $("#openLogin").click(function(){
+        $("#divLogin").slideDown("slow");
+    });
+    
+    $("#closeLogin").click(function(){
+        $("#divLogin").slideUp("slow");
+        $("#txtEndereco").val("");
     });
 </script>
