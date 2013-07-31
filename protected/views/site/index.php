@@ -1,4 +1,8 @@
 <div class="container-fluid bg-1">
+    <div class="pull-right">
+        <a class="btn btn-primary btn-medium"><i class="icon-user icon-white"></i></a>
+        <a id="openSearch" class="btn btn-primary btn-medium"><i class="icon-search icon-white"></i></a>
+    </div>
     <div class="row-fluid text-center logo_home">
             <img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png"/>
     </div>
@@ -7,18 +11,18 @@
             <strong> Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', CController::createUrl('cadastro/index'));?>. </strong>
         </p>
     </div>
-    <div class="row-fluid pull-right">
+<!--    <div class="row-fluid pull-right">
         <a class="navbar_search search_icon"></a>
-    </div>
+    </div>-->
 </div>
 
-<div id="divSearch" class="container-fluid">
-    <p></p>
-    <strong>Endereço</strong>
-    <input id="txtEndereco" type="textbox" class="input-xxlarge"/>
-    <button id="btnPesquisar" class="btn btn-primary btn-small">Pesquisar</button>
-    <a class="close_icon"></a>
-    <p></p>
+<div id="divSearch" class="container-fluid div_search text-center">
+    <div class="container-fluid text-center">
+        <strong style="color: #FFF;">Endereço</strong>
+        <input id="txtEndereco" type="textbox" class="input-xxlarge"/>
+        <a href="#" id="btnSearch"><i class="icon-search icon-white"></i></a>
+        <a id="closeSearch" class="pull-right"><i class="icon-remove icon-white"></i></a>
+    </div>
 </div>
 
 <div id="map_canvas" style="z-index: 2"></div>
@@ -55,7 +59,6 @@
                     type: "POST",
                     data: { latitude: ui.item.latitude, longitude: ui.item.longitude },
                     success: function(data){
-                        alert(data);
                         data = jQuery.parseJSON(data);
                         for (var i = 0; i < data.length; i++) {
                             createMarker(jQuery.parseJSON(data[i]).jsonDataSource);
@@ -66,11 +69,34 @@
         });
     });
     
-    $(".close_icon").click(function(){
+    $("#btnSearch").click(function(){
+        var latitude;
+        var longitude;
+        geocoder.geocode({ 'address': $("#txtEndereco").val() + ', Brasil', 'region': 'BR' }, function (results, status) {
+            $.map(results, function (item) {
+                latitude = item.geometry.location.lat();
+                longitude = item.geometry.location.lng();
+            });
+        });
+        $.ajax({
+            url: 'index.php/site/findEstabelecimento',
+            type: "POST",
+            data: { latitude: latitude, longitude: longitude },
+            success: function(data){
+                data = jQuery.parseJSON(data);
+                for (var i = 0; i < data.length; i++) {
+                    createMarker(jQuery.parseJSON(data[i]).jsonDataSource);
+                }
+            }
+        });
+    });
+    
+    $("#closeSearch").click(function(){
         $("#divSearch").slideUp("slow");
     });
     
-    $(".search_icon").click(function(){
+    $("#openSearch").click(function(){
         $("#divSearch").slideDown("slow");
+        $("#txtEndereco").focus();
     });
 </script>
