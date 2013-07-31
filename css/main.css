@@ -19,6 +19,15 @@
     margin-bottom: 0.5%;
 }
 
+.div_login{
+    background-color: #2f2f2f;
+}
+
+.div_login .container-fluid{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
 .logo_home {
     margin-top: 1%;
 }
