@@ -28,6 +28,32 @@ class EmpresaController extends Controller
 		$this->render('index', array('model'=>$model, 'mensagem'=>$mensagem ));
 	}
 
+    public function actionFindCategorias() {
+        if (isset($_GET['categoria'])) {
+            $categoria = $_GET['categoria'];
+            $categorias = Categoria::model()->findAll('nome LIKE :nome',array(':nome'=>$categoria.'%'));
+            echo  CJSON::encode($categorias);
+        }
+    }
+
+    public function convertModelToArray($models) {
+        if (is_array($models))
+            $arrayMode = TRUE;
+        else {
+            $models = array($models);
+            $arrayMode = FALSE;
+        }
+
+        $result = array();
+        foreach ($models as $model) {
+            if ($arrayMode)
+                array_push($result, $model->toJSON());
+            else
+                $result = $model->toJSON();
+        }
+        return $result;
+    }
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

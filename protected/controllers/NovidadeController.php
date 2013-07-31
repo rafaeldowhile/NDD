@@ -17,19 +17,17 @@ class NovidadeController extends Controller
         if (isset($_POST['Novidade'])) {
             $model->attributes = $_POST['Novidade'];
 
-            $model->latitude = $estabelecimento->latitude;
-            $model->longitude = $estabelecimento->longitude;
+            $model->id_empresa = $estabelecimento->id;
 
             if ($model->save()) {
                 $mensagem = 'Novidade salva com sucesso.';
             }
         }
 
-        $find = Novidade::model()->findByAttributes(array('latitude' => $estabelecimento->latitude,
-            'longitude' => $estabelecimento->longitude,
+        $find = Novidade::model()->findByAttributes(array('id_empresa' => $estabelecimento->id,
             'data_novidade' => date('yyyy-MM-dd')));
 
-        if ($find !== null) {
+        if (isset($find)) {
             $model = $find;
         }
 

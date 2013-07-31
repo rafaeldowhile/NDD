@@ -4,19 +4,19 @@
  * This is the model class for table "estabelecimento".
  *
  * The followings are the available columns in table 'estabelecimento':
- * @property integer $id
- * @property string $cnpj
  * @property string $latitude
  * @property string $longitude
  * @property integer $id_usuario
+ * @property integer $id_categoria
  * @property string $nome
+ * @property string $cnpj
  * @property string $endereco
  * @property string $telefone
  *
  * The followings are the available model relations:
  * @property Usuario $idUsuario
- * @property Categoria[] $categorias
  * @property Novidade[] $novidades
+ * @property Categoria $categoria
  */
 class Estabelecimento extends CActiveRecord
 {
@@ -38,7 +38,8 @@ class Estabelecimento extends CActiveRecord
         );
     }
 
-	/**
+
+    /**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -54,14 +55,14 @@ class Estabelecimento extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cnpj, latitude, longitude, id_usuario, nome, endereco, telefone', 'required'),
+			array('latitude, longitude, id_usuario, nome, cnpj, endereco, telefone, id_categoria', 'required'),
 			array('id_usuario', 'numerical', 'integerOnly'=>true),
-			array('cnpj', 'length', 'max'=>18),
 			array('latitude, longitude, nome, telefone', 'length', 'max'=>45),
+			array('cnpj', 'length', 'max'=>18),
 			array('endereco', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, cnpj, latitude, longitude, id_usuario, nome, endereco, telefone', 'safe', 'on'=>'search'),
+			array('latitude, longitude, id_usuario, nome, cnpj, endereco, telefone, id_categoria', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,8 +75,8 @@ class Estabelecimento extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'idUsuario' => array(self::BELONGS_TO, 'Usuario', 'id_usuario'),
-			'categorias' => array(self::MANY_MANY, 'Categoria', 'estabelecimento_categoria(id_estabelecimento, id_categoria)'),
-			'novidades' => array(self::HAS_MANY, 'Novidade', 'id_empresa'),
+			'novidades' => array(self::HAS_MANY, 'Novidade', 'latitude, longitude'),
+            'categoria' => array(self::BELONGS_TO, 'Categoria', 'id_categoria'),
 		);
 	}
 
@@ -85,14 +86,14 @@ class Estabelecimento extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'cnpj' => 'Cnpj',
 			'latitude' => 'Latitude',
 			'longitude' => 'Longitude',
 			'id_usuario' => 'Id Usuario',
 			'nome' => 'Nome',
+			'cnpj' => 'Cnpj',
 			'endereco' => 'Endereco',
 			'telefone' => 'Telefone',
+            'id_categoria' => 'Id Categoria',
 		);
 	}
 
@@ -107,17 +108,18 @@ class Estabelecimento extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('cnpj',$this->cnpj,true);
 		$criteria->compare('latitude',$this->latitude,true);
 		$criteria->compare('longitude',$this->longitude,true);
 		$criteria->compare('id_usuario',$this->id_usuario);
 		$criteria->compare('nome',$this->nome,true);
+		$criteria->compare('cnpj',$this->cnpj,true);
 		$criteria->compare('endereco',$this->endereco,true);
 		$criteria->compare('telefone',$this->telefone,true);
+        $criteria->compare('id_categoria', $this->id_categoria, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
 }
