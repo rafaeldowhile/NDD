@@ -95,17 +95,16 @@
 
         $("#categoria").autocomplete({
             source: function(request, response) {
-                alert(request.term);
                 $.ajax({
                     type: 'GET',
                     data: {'categoria': request.term},
                     url: 'findCategorias'
                 }).success(function(data){
-                            alert(data);
-                            response($.map(results, function (item) {
+                            data = jQuery.parseJSON(data);
+                            response($.map(data, function (item) {
                                 return {
-                                    label: item.id,
-                                    value: item.nome
+                                    label: item.nome,
+                                    value: item.id
                                 }
                             }))
                         });
