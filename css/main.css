@@ -10,7 +10,31 @@
     height: 200px;
 }
 
+.logo_home {
+    margin-top: 1%;
+}
+
 .top-line {
     border-top: 5px #08c solid;
     padding-bottom: 5%;
+}
+
+.navbar_search {
+    margin: 0 auto;
+    float: right;
+    position: relative;
+}
+
+.search_icon {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/search.png);
+}
+
+.close_icon {
+    width: 24px;
+    height: 23.5px;
+    float: right;
+    position: relative;
+    background-image: url(../images/close.png);
 }

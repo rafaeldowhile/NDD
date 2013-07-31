@@ -54,6 +54,13 @@ class SiteController extends Controller
 
         echo CJSON::encode($this->convertModelToArray($est));
     }
+    
+    public function actionFindEstabelecimento(){
+        $latitude = $_POST['latitude'];
+        $longitude = $_POST['longitude'];
+        $estabelecimentos = Estabelecimento::model()->findByAttributes(array('latitude' => $latitude, 'longitude' => $longitude));
+        echo CJSON::encode($this->convertModelToArray($estabelecimentos));
+    }
 
     public function convertModelToArray($models) {
         if (is_array($models))
