@@ -10,6 +10,15 @@
     height: 200px;
 }
 
+.div_search{
+    background-color: #2f2f2f;
+}
+
+.div_search .container-fluid{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
 .logo_home {
     margin-top: 1%;
 }
@@ -29,6 +38,10 @@
     width: 64px;
     height: 64px;
     background-image: url(../images/search.png);
+}
+
+.icon-search:hover{
+    
 }
 
 .close_icon {
