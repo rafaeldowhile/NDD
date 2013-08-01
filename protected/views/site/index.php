@@ -1,17 +1,29 @@
+
 <div id="divLogin" class="container-fluid div_login text-center">
     <div class="form-inline container-fluid text-center">
-        <input id="txtLogin" placeholder="Login" type="text" class="input-medium"/>
-        <input id="txtPassword" placeholder="Senha" type="password" class="input-medium"/>
-        <a href="#" id="btnLogin"><i class="icon-ok icon-white"></i></a>
-        <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
+        <form id="formLogin" action="<?php echo $this->createUrl('site/login') ?>" method="POST">
+            <input id="LoginForm[username]" name="LoginForm[username]" placeholder="Login" type="text" class="input-medium"/>
+            <input id="LoginForm[password]" name="LoginForm[password]" placeholder="Senha" type="password" class="input-medium"/>
+            <a href="#" onclick="Login();"><i class="icon-ok icon-white"></i></a>
+            <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
         
-        <div class="row form-inline container-fluid">
-            <label class="checkbox" style="color: #FFF;">
-                <input type="checkbox" name="remember" id="remember"/>Mantenha-me conectado
-            </label>
-            <a href="#">Esqueci minha senha</a>
-        </div>
+            <div class="row-fluid">
+                <div class="span2 offset4 text-left">
+                    <label class="checkbox" style="color: #FFF; padding-left: 20px;">
+                        <input type="checkbox" name="remember" id="remember"/><small>Mantenha-me conectado</small>
+                    </label>
+                </div>
+                <div class="span3 text-left">
+                    <a href="#"><small>Esqueci minha senha</small></a>
+                </div>
+            </div>
+        </form>
     </div>
+    <script>
+        function Login(){
+            $("#formLogin").submit();
+        }
+    </script>
 </div>
 <div class="container-fluid bg-1">
     <div class="pull-right">
