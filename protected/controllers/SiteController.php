@@ -29,7 +29,7 @@ class SiteController extends Controller
     public function actionSubscribe() {
 
         if ($_POST['Susbcribe']) {
-            
+
         }
 
     }
