@@ -1,30 +1,24 @@
 
-<div id="divLogin" class="container-fluid div_login text-center">
-    <div class="form-inline container-fluid text-center">
-        <form id="formLogin" action="<?php echo $this->createUrl('site/login') ?>" method="POST">
-            <input id="LoginForm[username]" name="LoginForm[username]" placeholder="Login" type="text" class="input-medium"/>
-            <input id="LoginForm[password]" name="LoginForm[password]" placeholder="Senha" type="password" class="input-medium"/>
-            <a href="#" onclick="Login();"><i class="icon-ok icon-white"></i></a>
-            <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
-        
-            <div class="row-fluid">
-                <div class="span2 offset4 text-left">
-                    <label class="checkbox" style="color: #FFF; padding-left: 20px;">
-                        <input type="checkbox" name="remember" id="remember"/><small>Mantenha-me conectado</small>
-                    </label>
-                </div>
-                <div class="span3 text-left">
-                    <a href="#"><small>Esqueci minha senha</small></a>
-                </div>
-            </div>
-        </form>
-    </div>
+<div id="divLogin" class="container-fluid div_login text-center" style="display: none; padding-top: 1.5%">
+    <form id="formLogin" action="<?php echo $this->createUrl('site/login') ?>" method="POST" class="form-inline">
+        <input id="LoginForm[username]" name="LoginForm[username]" placeholder="Login" type="text"  class="span2" required/>
+        <input id="LoginForm[password]" name="LoginForm[password]" placeholder="Senha" type="password" class="span2" required/>
+        <a href="#" onclick="Login();"><i class="icon-ok icon-white"></i></a>
+        <button style="opacity: 0"></button>
+        <label class="checkbox" style="color: #FFF; font-size: 80%">
+            <input type="checkbox" name="remember" id="remember"/><small>Mantenha-me conectado</small>
+        </label>
+        <a href="#"><small>Esqueci minha senha</small></a>
+        <a id="closeLogin" class="pull-right"><i class="icon-remove icon-white"></i></a>
+    </form>
     <script>
         function Login(){
             $("#formLogin").submit();
         }
     </script>
 </div>
+
+
 <div class="container-fluid bg-1">
     <div class="pull-right">
         <a id="openLogin" class="btn btn-primary btn-medium"><i class="icon-user icon-white"></i></a>
@@ -34,16 +28,18 @@
             <img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png"/>
     </div>
     <div class="row-fluid">
-        <p>
-            <strong> Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', CController::createUrl('cadastro/index'));?>. </strong>
-        </p>
+        <div class="span4">
+            <p>
+                <strong> Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', CController::createUrl('cadastro/index'));?>. </strong>
+            </p>
+        </div>
+        <div class="span4">
+            <form ></form>
+        </div>
     </div>
-<!--    <div class="row-fluid pull-right">
-        <a class="navbar_search search_icon"></a>
-    </div>-->
 </div>
 
-<div id="divSearch" class="container-fluid div_search text-center">
+<div id="divSearch" class="container-fluid div_search text-center" style="display: none">
     <div class="container-fluid text-center">
         <strong style="color: #FFF;">Endereço</strong>
         <input id="txtEndereco" type="textbox" class="input-xxlarge"/>

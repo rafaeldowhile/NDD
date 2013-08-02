@@ -26,6 +26,15 @@ class SiteController extends Controller
         $this->render('index');
     }
 
+    public function actionSubscribe() {
+
+        if ($_POST['Susbcribe']) {
+            
+        }
+
+    }
+
+
     public function actionLogin() {
         $model = new LoginForm();
         $mensagem = null;
