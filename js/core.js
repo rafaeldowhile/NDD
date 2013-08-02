@@ -91,10 +91,14 @@ function createMarker(estabelecimento) {
                     "<div class='page-header'>" +
                     "<h3>" + estabelecimento.attributes.nome + "</h3>" +
                     "</div>" +
+                    "<address>" +
+                    "<strong>" + estabelecimento.attributes.nome + "</strong><br>" +
+                    estabelecimento.attributes.endereco + "<br>" + 
+                    "<abbr>Telefone:</abbr>" + estabelecimento.attributes.telefone +
+                    "</address>" +
                     "<div class='row-fluid'>" +
                         "<div class='span12'>" +
                             "<blockquote>" +
-
                                 "<p>" + texto + "</p>" +
                             "</blockquote>" +
                         "</div>" +

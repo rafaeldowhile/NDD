@@ -98,6 +98,7 @@
         var i = $("#Size_categoria");
         var $cat = $("<div/>")
                 .addClass("categoria-item")
+                .append($("<a/>").append($("<i/>").addClass("icon-tag")).addClass("btn"))
                         .append($("<input>")
                                     .prop('type', 'text')
                                     .prop('id', "Categoria[" + i.val() + "]")
@@ -107,7 +108,7 @@
                                     .addClass("span12")
                                 )
                         .append($("<a/>").append($("<i/>").addClass("icon-remove")).addClass("categoria-delete btn"))
-                        .addClass("input-append")
+                        .addClass("input-prepend input-append")
                 .append($("<div/>")
                         .addClass("clear"));
 
