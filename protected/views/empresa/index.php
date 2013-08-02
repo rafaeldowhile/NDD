@@ -48,13 +48,13 @@
         ));
         ?>
 
-        <label>Endereço</label>
+        <label>EndereÃ§o</label>
         <?php echo CHtml::activeTextField($model,
         'endereco',
         array('id' => 'endereco',
             'required' => 'true',
             'class'=>'input-xxlarge'))?>
-        <span class="help-inline">Digite junto o número do estabelecimento.</span>
+        <span class="help-inline">Digite junto o nÃºmero do estabelecimento.</span>
 
         <label>Telefone de Contato</label>
         <?php echo CHtml::activeTextField($model,
@@ -68,7 +68,7 @@
         <label>Categorias</label>
         <div class="input-append">
             <input id="categoria" class="span12" id="teste" type="text"/>
-            <button class="btn" type="button">Adicionar</button>
+            <button class="btn" type="button"><i class="icon-plus"></i></button>
         </div>
 
         <div id="listaCategorias">
@@ -91,25 +91,23 @@
                 .off("click")
                 .hide("slow", function () {
                     $(this).remove();
-                })
+                });
     }
 
     function addCategoria(categoria) {
         var i = $("#Size_categoria");
         var $cat = $("<div/>")
                 .addClass("categoria-item")
-                .append($("<div/>")
-                        .addClass("categoria-text")
                         .append($("<input>")
                                     .prop('type', 'text')
                                     .prop('id', "Categoria[" + i.val() + "]")
                                     .prop('name', "Categoria[" + i.val() + "]")
                                     .prop('disabled', true)
                                     .val(categoria.label)
-                                ))
-                .append($("<div/>")
-                        .addClass("categoria-delete")
-                        .append($("<a/>").text("Delete")))
+                                    .addClass("span12")
+                                )
+                        .append($("<a/>").append($("<i/>").addClass("icon-remove")).addClass("categoria-delete btn"))
+                        .addClass("input-append")
                 .append($("<div/>")
                         .addClass("clear"));
 
