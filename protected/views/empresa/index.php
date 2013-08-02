@@ -93,7 +93,7 @@
                     $(this).remove();
                 });
     }
-
+    //Teste
     function addCategoria(categoria) {
         var i = $("#Size_categoria");
         var $cat = $("<div/>")
