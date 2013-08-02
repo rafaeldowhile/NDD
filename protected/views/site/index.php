@@ -24,18 +24,35 @@
         <a id="openLogin" class="btn btn-primary btn-medium"><i class="icon-user icon-white"></i></a>
         <a id="openSearch" class="btn btn-primary btn-medium"><i class="icon-search icon-white"></i></a>
     </div>
+
+    <div class="row-fluid">
+        <div class="span3" style="color: #1F4BEA">
+            <h4><strong><?php echo CHtml::link('Apareça aqui', CController::createUrl('cadastro/index'));?>. </strong></h4>
+        </div>
+    </div>
+
     <div class="row-fluid text-center logo_home">
             <img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png"/>
     </div>
-    <div class="row-fluid">
-        <div class="span4">
-            <p>
-                <strong> Quer aparecer aqui? Clique <?php echo CHtml::link('aqui', CController::createUrl('cadastro/index'));?>. </strong>
-            </p>
+
+    <div class="row-fluid text-center" style="padding-top: 3%">
+        <?php if (Yii::app()->user->hasFlash('success')): ?>
+        <div class="alert alert-success alert-block">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            <?php echo Yii::app()->user->getFlash('success'); ?>
         </div>
-        <div class="span4">
-            <form ></form>
+        <?php endif; ?>
+
+        <?php if (Yii::app()->user->hasFlash('error')): ?>
+        <div class="alert alert-error">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            <?php echo Yii::app()->user->getFlash('error'); ?>
         </div>
+        <?php endif; ?>
+        <form method="POST">
+            <h2>Receba as melhores novidades do dia, assine aqui!</h2>
+            <input type="email" id="Assinante[email]" name="Assinante[email]" placeholder="Seu Email De Assinante." required class="input-xxlarge text-center" style="height: 40px; font-size: 25px"/>
+        </form>
     </div>
 </div>
 

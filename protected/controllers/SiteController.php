@@ -22,18 +22,21 @@ class SiteController extends Controller
     }
 
     public function actionIndex()
-    {   
-        $this->render('index');
-    }
-
-    public function actionSubscribe() {
-
-        if ($_POST['Susbcribe']) {
-
+    {
+        if (isset($_POST['Assinante'])) {
+            $model = new Assinante();
+            $model->attributes = $_POST['Assinante'];
+            if ($model->save()) {
+                Yii::app()->user->setFlash('success', 'Sua assinatura foi efetuada com sucesso.');
+                $this->refresh();
+            } else {
+                Yii::app()->user->setFlash('error', 'Houve algum problema na sua assinatura.');
+                $this->refresh();
+            }
         }
 
+        $this->render('index');
     }
-
 
     public function actionLogin() {
         $model = new LoginForm();
