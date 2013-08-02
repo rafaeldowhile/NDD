@@ -67,8 +67,13 @@
 
         <label>Categorias</label>
         <div class="input-append">
+<<<<<<< HEAD
+            <input id="categoria" class="span12" type="text"/>
+            <button class="btn" type="button">Adicionar</button>
+=======
             <input id="categoria" class="span12" id="teste" type="text"/>
             <button class="btn" type="button"><i class="icon-plus"></i></button>
+>>>>>>> fd88162fc6b3c020a39a127e7787109cd8813658
         </div>
 
         <div id="listaCategorias">
@@ -90,6 +95,8 @@
         $(this).parent(".categoria-item")
                 .off("click")
                 .hide("slow", function () {
+                    var valorAtual = $("#Size_categoria").val();
+                    $("#Size_categoria").val(parseFloat(valorAtual));
                     $(this).remove();
                 });
     }
@@ -98,17 +105,35 @@
         var i = $("#Size_categoria");
         var $cat = $("<div/>")
                 .addClass("categoria-item")
+<<<<<<< HEAD
                 .append($("<a/>").append($("<i/>").addClass("icon-tag")).addClass("btn"))
+=======
+<<<<<<< HEAD
+                        .append($("<input/>")
+=======
+>>>>>>> f9f789a6c0c077847a4b429587a7a16cd9a5aa9d
                         .append($("<input>")
+>>>>>>> fd88162fc6b3c020a39a127e7787109cd8813658
                                     .prop('type', 'text')
                                     .prop('id', "Categoria[" + i.val() + "]")
                                     .prop('name', "Categoria[" + i.val() + "]")
                                     .prop('disabled', true)
                                     .val(categoria.label)
+<<<<<<< HEAD
+                        ).append($("<a/>")
+                                .prop("href", "")
+                                .addClass("categoria-delete")
+                                .text("Remover"))
+=======
                                     .addClass("span12")
                                 )
                         .append($("<a/>").append($("<i/>").addClass("icon-remove")).addClass("categoria-delete btn"))
+<<<<<<< HEAD
                         .addClass("input-prepend input-append")
+=======
+                        .addClass("input-append")
+>>>>>>> fd88162fc6b3c020a39a127e7787109cd8813658
+>>>>>>> f9f789a6c0c077847a4b429587a7a16cd9a5aa9d
                 .append($("<div/>")
                         .addClass("clear"));
 
@@ -141,6 +166,7 @@
             },
             select: function (event, ui){
                 addCategoria(ui.item);
+                $("#categoria").val("");
             }
         });
 
