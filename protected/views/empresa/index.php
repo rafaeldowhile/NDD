@@ -67,7 +67,7 @@
 
         <label>Categorias</label>
         <div class="input-append">
-            <input id="categoria" class="span12" id="teste" type="text"/>
+            <input id="categoria" class="span12" type="text"/>
             <button class="btn" type="button">Adicionar</button>
         </div>
 
@@ -90,6 +90,8 @@
         $(this).parent(".categoria-item")
                 .off("click")
                 .hide("slow", function () {
+                    var valorAtual = $("#Size_categoria").val();
+                    $("#Size_categoria").val(parseFloat(valorAtual));
                     $(this).remove();
                 })
     }
@@ -98,18 +100,16 @@
         var i = $("#Size_categoria");
         var $cat = $("<div/>")
                 .addClass("categoria-item")
-                .append($("<div/>")
-                        .addClass("categoria-text")
-                        .append($("<input>")
+                        .append($("<input/>")
                                     .prop('type', 'text')
                                     .prop('id', "Categoria[" + i.val() + "]")
                                     .prop('name', "Categoria[" + i.val() + "]")
                                     .prop('disabled', true)
                                     .val(categoria.label)
-                                ))
-                .append($("<div/>")
-                        .addClass("categoria-delete")
-                        .append($("<a/>").text("Delete")))
+                        ).append($("<a/>")
+                                .prop("href", "")
+                                .addClass("categoria-delete")
+                                .text("Remover"))
                 .append($("<div/>")
                         .addClass("clear"));
 
@@ -142,6 +142,7 @@
             },
             select: function (event, ui){
                 addCategoria(ui.item);
+                $("#categoria").val("");
             }
         });
 
