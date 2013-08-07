@@ -48,13 +48,13 @@
         ));
         ?>
 
-        <label>EndereÃ§o</label>
+        <label>Endereço</label>
         <?php echo CHtml::activeTextField($model,
         'endereco',
         array('id' => 'endereco',
             'required' => 'true',
             'class'=>'input-xxlarge'))?>
-        <span class="help-inline">Digite junto o nÃºmero do estabelecimento.</span>
+        <span class="help-inline">Digite junto o número do estabelecimento.</span>
 
         <label>Telefone de Contato</label>
         <?php echo CHtml::activeTextField($model,
@@ -72,6 +72,15 @@
         </div>
 
         <div id="listaCategorias">
+            <?php foreach ($model->categorias as $indice => $categoria) {?>
+                <div class="categoria-item">
+                    <div class="input-append">
+                        <input type="text" name="Categoria[<?php echo $indice + 1;?>]" id="Categoria[<?php echo $indice + 1;?>]" value="<?php echo $categoria->nome ?>" disabled>
+                        <a href="#" class="btn categoria-delete"><i class="icon-remove"></i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            <?php } ?>
         </div>
 
         <input type="hidden" id="Size_categoria" value="<?php echo count($model->categorias)?>"/>
@@ -90,34 +99,36 @@
         $(this).parent(".categoria-item")
                 .off("click")
                 .hide("slow", function () {
-                    var valorAtual = $("#Size_categoria").val();
-                    $("#Size_categoria").val(parseFloat(valorAtual));
+                    var i = parseFloat($("#Size_categoria").val()) - 1;
+                    $("#Size_categoria").val(i);
                     $(this).remove();
                 });
     }
 
     function addCategoria(categoria) {
-        var i = $("#Size_categoria");
+        var i = parseFloat($("#Size_categoria").val()) + 1;
         var $cat = $("<div/>")
-                .addClass("categoria-item")
-                        .append($("<input>")
-                                    .prop('type', 'text')
-                                    .prop('id', "Categoria[" + i.val() + "]")
-                                    .prop('name', "Categoria[" + i.val() + "]")
-                                    .prop('disabled', true)
-                                    .val(categoria.label)
-                                    .addClass("span12")
-                                )
-                        .append($("<a/>").append($("<i/>").addClass("icon-remove")).addClass("categoria-delete btn"))
+                        .addClass("categoria-item")
                         .addClass("input-append")
-                .append($("<div/>")
-                        .addClass("clear"));
+                        .append($("<input>")
+                                .prop('type', 'text')
+                                .prop('id', "Categoria[" + i+ "]")
+                                .prop('name', "Categoria[" + i + "]")
+                                .prop('disabled', true)
+                                .val(categoria.label))
+                        .append($("<a/>")
+                                    .addClass("categoria-delete btn")
+                                    .append($("<i/>")
+                                                .addClass("icon-remove")))
+
+                        .append($("<div/>")
+                                .addClass("clear"));
 
         $("#listaCategorias").append($cat);
 
         $(".categoria-delete").click(onCategoriaDeleteClick);
 
-        i.val(parseFloat(i.val()) + 1);
+        $("#Size_categoria").val(i);
     }
 
     $(document).ready(function () {

@@ -50,8 +50,11 @@
         </div>
         <?php endif; ?>
         <form method="POST">
-            <h2>Receba as melhores novidades do dia, assine aqui!</h2>
-            <input type="email" id="Assinante[email]" name="Assinante[email]" placeholder="Seu Email De Assinante." required class="input-xxlarge text-center" style="height: 40px; font-size: 25px"/>
+            <h4>Receba as melhores novidades do dia, assine aqui!</h4>
+            <div class="input-append">
+                <input type="email" id="Assinante[email]" name="Assinante[email]" placeholder="Seu email de assinante aqui." required class="input-xxlarge text-center" style="height: 30px; font-size: 20px"/>
+                <button class="btn" href="#" style="height: 40px;"><i class="icon-ok"></i></button>
+            </div>
         </form>
     </div>
 </div>

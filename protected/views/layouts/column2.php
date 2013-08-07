@@ -1,6 +1,9 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
 <div class="row-fluid top-line">
+    <div class="span1 text-center" style="padding-top: 1%">
+        <img src="<?php echo Yii::app()->baseUrl;?>/images/logo_admin.png">
+    </div>
     <div class="pull-right">
         <a class="btn btn-primary" href="<?php echo Yii::app()->baseUrl;?>/index.php/site/logout"><i class="icon-off icon-white"></i> Sair</a>
     </div>

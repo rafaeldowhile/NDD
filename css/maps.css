@@ -37,12 +37,4 @@ html, body {
     font-variant: ruby;
 }
 
-.bg-1 {
-    zoom: 1;
-    background-size: cover;
-    background-image: url(images/wal.jpg);
-    background-position: center;
-    padding-bottom: 10%;
-}
-
 
