@@ -13,12 +13,19 @@
 
 <div class="row-fluid" style="">
 
-    <?php if ($mensagem !== null) {?>
-    <div class="alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <p><?php echo $mensagem; ?></p>
-    </div>
-    <?php }?>
+    <?php if (Yii::app()->user->hasFlash('success')) { ?>
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <?php echo Yii::app()->user->getFlash('success'); ?>
+        </div>
+    <?php }
+    if (Yii::app()->user->hasFlash('error')) {?>
+        <div class="alert alert-error">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <?php echo Yii::app()->user->getFlash('error'); ?>
+        </div>
+    <?php } ?>
+
 
     <?php $form=$this->beginWidget('CActiveForm', array(
     'id'=>'usuario-form',
@@ -107,7 +114,7 @@
 
     function addCategoria(categoria) {
         var i = parseFloat($("#Size_categoria").val()) + 1;
-        var $cat = $("<div/>")
+        var $cat = $($("<div/>").addClass("clear")).append($("<div/>")
                         .addClass("categoria-item")
                         .addClass("input-append")
                         .append($("<input>")
@@ -119,7 +126,7 @@
                         .append($("<a/>")
                                     .addClass("categoria-delete btn")
                                     .append($("<i/>")
-                                                .addClass("icon-remove")))
+                                                .addClass("icon-remove"))))
 
                         .append($("<div/>")
                                 .addClass("clear"));

@@ -8,15 +8,15 @@
 
 var map;
 var infowindow;
-var inativo = 'images/i12.png';
-var ativo = 'images/i11.png';
+var inativo = 'images/desativo.png';
+var ativo = 'images/ativo.png';
 
 function initialize() {
 
     var cidade = new google.maps.LatLng(-30.103040, -51.254484);
 
     var mapOptions = {
-        zoom: 16,
+        zoom: 14,
         mapTypeControl: true,
         center: cidade,
         mapTypeControlOptions: {
@@ -89,21 +89,20 @@ function createMarker(estabelecimento) {
             infowindow.setContent(
                 "<div class=''>" +
                     "<div class='page-header'>" +
-                    "<h3>" + estabelecimento.attributes.nome + "</h3>" +
-                    "</div>" +
+                    "<h4>" + estabelecimento.attributes.nome + "</h4>" +
                     "<address>" +
-                    "<strong>" + estabelecimento.attributes.nome + "</strong><br>" +
-                    estabelecimento.attributes.endereco + "<br>" + 
+                    estabelecimento.attributes.endereco + "<br>" +
                     "<abbr>Telefone:</abbr>" + estabelecimento.attributes.telefone +
                     "</address>" +
+                    "</div>" +
                     "<div class='row-fluid'>" +
                         "<div class='span12'>" +
                             "<blockquote>" +
-                                "<p>" + texto + "</p>" +
+                                "<p style='color: #1F4BEA'>" + texto + "</p>" +
                             "</blockquote>" +
                         "</div>" +
                     "</div>" +
-                    "<div class='form-actions'>" +
+                    "<div class=''>" +
                         "<p>" +
                             "<strong>Compartilhe essa novidade e convide seus amigos para aproveitarem!</strong>" +
                         "</p>" +

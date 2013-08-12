@@ -7,7 +7,6 @@ class NovidadeController extends Controller
 	public function actionIndex()
 	{
         $model = new Novidade();
-        $mensagem = null;
         $estabelecimento = Estabelecimento::model()->findByAttributes(array('id_usuario'=>Yii::app()->user->getId()));
 
         if ($estabelecimento === null) {
@@ -20,18 +19,19 @@ class NovidadeController extends Controller
             $model->id_empresa = $estabelecimento->id;
 
             if ($model->save()) {
-                $mensagem = 'Novidade salva com sucesso.';
+                Yii::app()->user->setFlash('success', 'Novidade adicionada com sucesso.');
+            } else {
+                Yii::app()->user->setFlash('error', 'Problemas ao adicionar a novidade. Por favor, nos contate.');
             }
         }
 
-        $find = Novidade::model()->findByAttributes(array('id_empresa' => $estabelecimento->id,
-            'data_novidade' => date('yyyy-MM-dd')));
+        $find = Novidade::model()->findByAttributes(array('id_empresa' => $estabelecimento->id, 'data_novidade' => date('yyyy-MM-dd')));
 
         if (isset($find)) {
             $model = $find;
         }
 
-		$this->render('index', array('model'=>$model, 'mensagem'=>$mensagem));
+		$this->render('index', array('model'=>$model));
 	}
 
     public function actionHistorico()

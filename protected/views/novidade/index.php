@@ -21,12 +21,18 @@
     'htmlOptions'=>array('class'=>'form-singin')
 )); ?>
 
-    <?php if ($mensagem !== null) {?>
-    <div class="alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <p><?php echo $mensagem; ?></p>
-    </div>
-    <?php }?>
+    <?php if (Yii::app()->user->hasFlash('success')) { ?>
+        <div class="alert alert-success">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <?php echo Yii::app()->user->getFlash('success'); ?>
+        </div>
+    <?php }
+    if (Yii::app()->user->hasFlash('error')) {?>
+        <div class="alert alert-error">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <?php echo Yii::app()->user->getFlash('error'); ?>
+        </div>
+    <?php } ?>
 
     <?php echo $form->errorSummary($model); ?>
     <fieldset>

@@ -25,17 +25,16 @@
         <a id="openSearch" class="btn btn-primary btn-medium"><i class="icon-search icon-white"></i></a>
     </div>
 
-    <div class="row-fluid">
-        <div class="span3" style="color: #1F4BEA">
+    <div class="row-fluid text-center logo_home">
+        <div class="span4" style="color: #1F4BEA">
             <h4><strong><?php echo CHtml::link('Apareça aqui', CController::createUrl('cadastro/index'));?>. </strong></h4>
+        </div>
+        <div class="span4">
+            <img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png"/>
         </div>
     </div>
 
-    <div class="row-fluid text-center logo_home">
-            <img src="<?php echo Yii::app()->baseUrl; ?>/images/logo.png"/>
-    </div>
-
-    <div class="row-fluid text-center" style="padding-top: 3%">
+    <div class="row-fluid text-center">
         <?php if (Yii::app()->user->hasFlash('success')): ?>
         <div class="alert alert-success alert-block">
             <a class="close" data-dismiss="alert" href="#">&times;</a>
@@ -50,7 +49,7 @@
         </div>
         <?php endif; ?>
         <form method="POST">
-            <h4>Receba as melhores novidades do dia, assine aqui!</h4>
+            <h4 style="color: white;">Receba as melhores novidades do dia, assine aqui!</h4>
             <div class="input-append">
                 <input type="email" id="Assinante[email]" name="Assinante[email]" placeholder="Seu email de assinante aqui." required class="input-xxlarge text-center" style="height: 30px; font-size: 20px"/>
                 <button class="btn" href="#" style="height: 40px;"><i class="icon-ok"></i></button>

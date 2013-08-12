@@ -12,20 +12,27 @@ class EmpresaController extends Controller
             $model = new Estabelecimento();
         }
 
-        $mensagem = null;
         if (isset($_GET['mensagem'])) {
-            $mensagem = $_GET['mensagem'];
+            Yii::app()->user->setFlash('error', $_GET['mensagem']);
         }
 
         if(isset($_POST['Estabelecimento'])) {
             $model->attributes = $_POST['Estabelecimento'];
             $model->id_usuario = Yii::app()->user->getId();
+
+            $model->categorias = null;
+            foreach ($_POST['Categoria'] as $categoria) {
+                array_push($model->categorias,
+                    Categoria::model()->findById($categoria));
+            }
             if ($model->save()) {
-                $mensagem = 'Empresa registrada com sucesso!';
+                Yii::app()->user->setFlash('success', "O cadastro da empresa foi salvo com sucesso.");
+            } else {
+                Yii::app()->user->setFlash('error', "Houve algum problema ao salvor o cadastro da empresa. Por favor, nos informe.");
             }
         }
 
-		$this->render('index', array('model'=>$model, 'mensagem'=>$mensagem ));
+		$this->render('index', array('model'=>$model));
 	}
 
     public function actionFindCategorias() {

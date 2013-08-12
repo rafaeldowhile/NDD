@@ -50,13 +50,13 @@
             <div class="span3" style="color: #fff">
                 <h6>Siga o novidia</h6>
                 <div class="row-fluid">
-                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/fb.png" width="20%"/> </a>
+                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/fb.png"/> </a>
                 </div>
                 <div class="row-fluid">
-                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/g.png" width="20%"/> </a>
+                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/g.png"/> </a>
                 </div>
                 <div class="row-fluid">
-                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/twt.png" width="20%"/> </a>
+                    <a href="#"><img src="<?php echo Yii::app()->baseUrl;?>/images/social/twt.png"/> </a>
                 </div>
             </div>
             <div class="span3">

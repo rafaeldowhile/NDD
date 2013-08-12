@@ -5,12 +5,9 @@
     zoom: 1;
     background-size: cover;
     background-position: center;
-    background-image: url(images/bg3.jpg);
+    background-image: url(images/cidade_pin.jpg);
 }
 
-#footer {
-    opacity: 0.9;
-}
 
 .form-singin {
     max-width: 300px;
